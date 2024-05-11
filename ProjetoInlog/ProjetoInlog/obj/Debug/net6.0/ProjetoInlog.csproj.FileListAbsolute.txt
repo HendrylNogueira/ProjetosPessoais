@@ -1,0 +1,14 @@
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\bin\Debug\net6.0\ProjetoInlog.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\bin\Debug\net6.0\ProjetoInlog.deps.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\bin\Debug\net6.0\ProjetoInlog.runtimeconfig.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\bin\Debug\net6.0\ProjetoInlog.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\bin\Debug\net6.0\ProjetoInlog.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\ProjetoInlog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\ProjetoInlog.AssemblyInfoInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\ProjetoInlog.AssemblyInfo.cs
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\ProjetoInlog.csproj.CoreCompileInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\ProjetoInlog.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\refint\ProjetoInlog.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\ProjetoInlog.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\ProjetoInlog.genruntimeconfig.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjetoInlog\obj\Debug\net6.0\ref\ProjetoInlog.dll
