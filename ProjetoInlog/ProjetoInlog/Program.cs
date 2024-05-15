@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             Veiculo veiculo = new Veiculo();
+            BancodeDados dados = new BancodeDados();
 
             while (true)
             {
@@ -18,6 +19,7 @@
                 if (opcao == 1)
                 {
                     veiculo.Inserir();
+                    veiculo.AdicionaVeiculo();
                 }
 
                 else if (opcao == 99)
@@ -25,7 +27,7 @@
                     if (veiculo.ConfirmaSair() == true) { break; }
                 }
             }
-
+            veiculo.Exibir();
         }
     }
 }
