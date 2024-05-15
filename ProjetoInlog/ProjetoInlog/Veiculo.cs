@@ -95,9 +95,4 @@ namespace ProjetoInlog
         }
 
     }
-
-    internal class BancodeDados
-    {
-
-    }
 }
