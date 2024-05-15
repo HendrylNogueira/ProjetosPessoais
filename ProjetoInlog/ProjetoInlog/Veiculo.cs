@@ -65,8 +65,6 @@ namespace ProjetoInlog
         public void Exibir()
         {
             Console.WriteLine(" ");
-            Console.WriteLine("itens pelo loop:");
-            Console.WriteLine(" ");
 
             for (int item = 1; item <= veiculos_adicionados.Count; item++)
             {
