@@ -13,6 +13,7 @@ namespace ProjetoInlog
         public string Tipo;
         public byte NumPassageiros;
         public string Cor;
+        public int Indice;
         public List<object> Veiculos_adicionados = [];
         public List<object> DadosDosVeiculos = [];
 
@@ -101,12 +102,14 @@ namespace ProjetoInlog
             Console.WriteLine(" ");
             for (int item = 0; item < Veiculos_adicionados.Count; item += 4)
             {
+                Indice = 0;
                 chassi_em_memoria = (string)Veiculos_adicionados[item];
 
                 if (chassi_em_memoria == chassi_para_busca)
                 {
                     for (int i = 0; i < 4; i++)
                     {
+                        if (i == 0) { Indice += item; }
                         Console.WriteLine($"{DadosDosVeiculos[item + i]}: {Veiculos_adicionados[item + i]}");
                     }
                     break;
@@ -121,46 +124,18 @@ namespace ProjetoInlog
 
         public void Deletar()
         {
+            Filtrar();
             Console.WriteLine(" ");
-            Console.Write("Digite o Chassi do veículo desejado: ");
-            string chassi_para_busca = Console.ReadLine();
-            string chassi_em_memoria = " ";
-
-            Console.WriteLine(" ");
-            for (int item = 0; item < Veiculos_adicionados.Count; item += 4)
+            Console.WriteLine("[1] SIM\n" +
+                "[2] NAO");
+            Console.Write("Deseja realmente deletar o vículo acima?");
+            int confirma_del = int.Parse(Console.ReadLine());
+            if (confirma_del == 1)
             {
-                int indice = 0;
-                chassi_em_memoria = (string)Veiculos_adicionados[item];
-
-                if (chassi_em_memoria == chassi_para_busca)
-                {
-                    for (int i = 0; i < 4; i++)
-                    {
-                        if (i == 0) { indice += item; }
-                        Console.WriteLine($"{DadosDosVeiculos[item+i]}: {Veiculos_adicionados[item + i]}");
-                    }
-
-                    Console.WriteLine(" ");
-                    Console.WriteLine("[1] SIM\n" +
-                        "[2] NAO");
-                    Console.Write("Deseja realmente deletar o vículo acima?");
-                    int confirma_del = int.Parse(Console.ReadLine());
-                    if (confirma_del == 1)
-                    {
-                        DadosDosVeiculos.RemoveRange(indice, indice +4);
-                        Veiculos_adicionados.RemoveRange(indice, indice +4);
-                        Console.WriteLine("Veículo deletado.");
-                    }
-                    break;
-                }
+                DadosDosVeiculos.RemoveRange(Indice, Indice +4);
+                Veiculos_adicionados.RemoveRange(Indice, Indice +4);
+                Console.WriteLine("Veículo deletado.");
             }
-            if (chassi_para_busca != chassi_em_memoria)
-            {
-                Console.WriteLine("Chassi não encontrado!");
-            }
-         
         }
-
-
     }
 }
