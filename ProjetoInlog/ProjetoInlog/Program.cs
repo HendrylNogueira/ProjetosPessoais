@@ -10,7 +10,7 @@
             {
                 Console.WriteLine("[1] INSERIR\n" +
                     "[2] EDITAR - nok\n" +
-                    "[3] DELETAR - nok\n" +
+                    "[3] DELETAR\n" +
                     "[4] LISTAR\n" +
                     "[5] FILTRAR\n" +
                     "[99] SAIR");
@@ -22,6 +22,11 @@
                 {
                     veiculo.Inserir();
                     veiculo.AdicionaVeiculo();
+                }
+
+                else if (opcao == 3)
+                {
+                    veiculo.Deletar();
                 }
 
                 else if (opcao == 4)

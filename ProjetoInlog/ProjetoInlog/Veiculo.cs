@@ -65,7 +65,6 @@ namespace ProjetoInlog
         public void Exibir()
         {
             Console.WriteLine(" ");
-
             for (int item = 1; item <= Veiculos_adicionados.Count; item++)
             {
                 Console.WriteLine($"{DadosDosVeiculos[item-1]}: {Veiculos_adicionados[item-1]}");
@@ -119,6 +118,49 @@ namespace ProjetoInlog
             }
             Console.WriteLine(" ");
         }
+
+        public void Deletar()
+        {
+            Console.WriteLine(" ");
+            Console.Write("Digite o Chassi do veículo desejado: ");
+            string chassi_para_busca = Console.ReadLine();
+            string chassi_em_memoria = " ";
+
+            Console.WriteLine(" ");
+            for (int item = 0; item < Veiculos_adicionados.Count; item += 4)
+            {
+                int indice = 0;
+                chassi_em_memoria = (string)Veiculos_adicionados[item];
+
+                if (chassi_em_memoria == chassi_para_busca)
+                {
+                    for (int i = 0; i < 4; i++)
+                    {
+                        if (i == 0) { indice += item; }
+                        Console.WriteLine($"{DadosDosVeiculos[item+i]}: {Veiculos_adicionados[item + i]}");
+                    }
+
+                    Console.WriteLine(" ");
+                    Console.WriteLine("[1] SIM\n" +
+                        "[2] NAO");
+                    Console.Write("Deseja realmente deletar o vículo acima?");
+                    int confirma_del = int.Parse(Console.ReadLine());
+                    if (confirma_del == 1)
+                    {
+                        DadosDosVeiculos.RemoveRange(indice, indice +4);
+                        Veiculos_adicionados.RemoveRange(indice, indice +4);
+                        Console.WriteLine("Veículo deletado.");
+                    }
+                    break;
+                }
+            }
+            if (chassi_para_busca != chassi_em_memoria)
+            {
+                Console.WriteLine("Chassi não encontrado!");
+            }
+         
+        }
+
 
     }
 }
