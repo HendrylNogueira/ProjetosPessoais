@@ -12,7 +12,7 @@
                     "[2] EDITAR - nok\n" +
                     "[3] DELETAR - nok\n" +
                     "[4] LISTAR\n" +
-                    "[5] FILTRAR - nok\n" +
+                    "[5] FILTRAR\n" +
                     "[99] SAIR");
                 Console.Write("Digite qual a opção desejada: ");
 
