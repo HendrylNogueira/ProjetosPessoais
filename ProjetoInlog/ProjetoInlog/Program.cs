@@ -8,8 +8,9 @@
 
             while (true)
             {
+                Console.WriteLine(" ");
                 Console.WriteLine("[1] INSERIR\n" +
-                    "[2] EDITAR - nok\n" +
+                    "[2] EDITAR\n" +
                     "[3] DELETAR\n" +
                     "[4] LISTAR\n" +
                     "[5] FILTRAR\n" +
@@ -22,6 +23,11 @@
                 {
                     veiculo.Inserir();
                     veiculo.AdicionaVeiculo();
+                }
+
+                else if (opcao == 2)
+                {
+                    veiculo.Editar();
                 }
 
                 else if (opcao == 3)

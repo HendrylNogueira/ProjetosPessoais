@@ -20,6 +20,8 @@ namespace ProjetoInlog
 
         public void Inserir()
         {
+            Console.WriteLine("");
+
             Console.WriteLine("\nDigite os dados do veículo:");
 
             Console.Write("\nChassi: ");
@@ -43,8 +45,6 @@ namespace ProjetoInlog
 
             Console.Write("\nCor: ");
             Cor = Console.ReadLine();
-
-            Console.WriteLine("");
         }
 
         public void AdicionaVeiculo()
@@ -76,6 +76,7 @@ namespace ProjetoInlog
 
         public bool ConfirmaSair()
         {
+            Console.WriteLine(" ");
             Console.WriteLine("\nDeseja realmente sair? ");
             Console.Write("[1] Não\n" +
                 "[2] Sim:\n" +
@@ -98,11 +99,11 @@ namespace ProjetoInlog
             Console.Write("Digite o Chassi do veículo desejado: ");
             string chassi_para_busca = Console.ReadLine();
             string chassi_em_memoria = " ";
+            Indice = 0;
 
             Console.WriteLine(" ");
             for (int item = 0; item < Veiculos_adicionados.Count; item += 4)
             {
-                Indice = 0;
                 chassi_em_memoria = (string)Veiculos_adicionados[item];
 
                 if (chassi_em_memoria == chassi_para_busca)
@@ -119,7 +120,6 @@ namespace ProjetoInlog
             {
                 Console.WriteLine("Chassi não encontrado!");
             }
-            Console.WriteLine(" ");
         }
 
         public void Deletar()
@@ -136,6 +136,16 @@ namespace ProjetoInlog
                 Veiculos_adicionados.RemoveRange(Indice, Indice +4);
                 Console.WriteLine("Veículo deletado.");
             }
+        }
+
+        public void Editar()
+        {
+            Filtrar();
+            Console.WriteLine(" ");
+            Console.WriteLine("A unica opcao disponivel para editar, é a cor.");
+            Console.Write("Digite a nova cor: ");
+            Veiculos_adicionados[Indice+3] = Console.ReadLine();
+            Console.WriteLine("Cor alterada!");
         }
     }
 }
