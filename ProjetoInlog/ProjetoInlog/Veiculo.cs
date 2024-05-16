@@ -13,8 +13,8 @@ namespace ProjetoInlog
         public string Tipo;
         public byte NumPassageiros;
         public string Cor;
-        public List<object> veiculos_adicionados = [];
-        public List<object> test = [];
+        public List<object> Veiculos_adicionados = [];
+        public List<object> DadosDosVeiculos = [];
 
 
         public void Inserir()
@@ -48,17 +48,17 @@ namespace ProjetoInlog
 
         public void AdicionaVeiculo()
         {
-            test.Add("Chassi");
-            veiculos_adicionados.Add(Chassi);
+            DadosDosVeiculos.Add("Chassi");
+            Veiculos_adicionados.Add(Chassi);
 
-            test.Add("Tipo");
-            veiculos_adicionados.Add(Tipo);
+            DadosDosVeiculos.Add("Tipo");
+            Veiculos_adicionados.Add(Tipo);
 
-            test.Add("NumPassageiros");
-            veiculos_adicionados.Add(NumPassageiros);
+            DadosDosVeiculos.Add("NumPassageiros");
+            Veiculos_adicionados.Add(NumPassageiros);
 
-            test.Add("Cor");
-            veiculos_adicionados.Add(Cor);
+            DadosDosVeiculos.Add("Cor");
+            Veiculos_adicionados.Add(Cor);
 
         }
 
@@ -66,9 +66,9 @@ namespace ProjetoInlog
         {
             Console.WriteLine(" ");
 
-            for (int item = 1; item <= veiculos_adicionados.Count; item++)
+            for (int item = 1; item <= Veiculos_adicionados.Count; item++)
             {
-                Console.WriteLine($"{test[item-1]}: {veiculos_adicionados[item-1]}");
+                Console.WriteLine($"{DadosDosVeiculos[item-1]}: {Veiculos_adicionados[item-1]}");
                 if (item % 4 == 0) { Console.WriteLine(""); }
             }
 
@@ -90,6 +90,34 @@ namespace ProjetoInlog
             {
                 return false;
             }
+        }
+
+        public void Filtrar()
+        {
+            Console.WriteLine(" ");
+            Console.Write("Digite o Chassi do veículo desejado: ");
+            string chassi_para_busca = Console.ReadLine();
+            string chassi_em_memoria = " ";
+
+            Console.WriteLine(" ");
+            for (int item = 0; item < Veiculos_adicionados.Count; item += 4)
+            {
+                chassi_em_memoria = (string)Veiculos_adicionados[item];
+
+                if (chassi_em_memoria == chassi_para_busca)
+                {
+                    for (int i = 0; i < 4; i++)
+                    {
+                        Console.WriteLine($"{DadosDosVeiculos[item + i]}: {Veiculos_adicionados[item + i]}");
+                    }
+                    break;
+                }
+            }
+            if (chassi_para_busca != chassi_em_memoria)
+            {
+                Console.WriteLine("Chassi não encontrado!");
+            }
+            Console.WriteLine(" ");
         }
 
     }

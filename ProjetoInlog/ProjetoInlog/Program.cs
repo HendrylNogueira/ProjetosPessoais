@@ -9,8 +9,10 @@
             while (true)
             {
                 Console.WriteLine("[1] INSERIR\n" +
-                    "[2] EDITAR\n" +
-                    "[3] LISTAR\n" +
+                    "[2] EDITAR - nok\n" +
+                    "[3] DELETAR - nok\n" +
+                    "[4] LISTAR\n" +
+                    "[5] FILTRAR - nok\n" +
                     "[99] SAIR");
                 Console.Write("Digite qual a opção desejada: ");
 
@@ -22,9 +24,14 @@
                     veiculo.AdicionaVeiculo();
                 }
 
-                else if (opcao == 3)
+                else if (opcao == 4)
                 {
                     veiculo.Exibir();
+                }
+
+                else if (opcao == 5)
+                {
+                    veiculo.Filtrar();
                 }
 
                 else if (opcao == 99)
