@@ -15,8 +15,8 @@
                     "[4] LISTAR\n" +
                     "[5] FILTRAR\n" +
                     "[99] SAIR");
-                Console.Write("Digite qual a opção desejada: ");
 
+                Console.Write("Digite qual a opção desejada: ");
                 int opcao = int.Parse(Console.ReadLine());
 
                 if (opcao == 1)

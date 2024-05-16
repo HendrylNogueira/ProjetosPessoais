@@ -22,7 +22,7 @@ namespace ProjetoInlog
         {
             Console.WriteLine("");
 
-            Console.WriteLine("\nDigite os dados do veículo:");
+            Console.WriteLine("Digite os dados do veículo:");
 
             Console.Write("\nChassi: ");
             Chassi = Console.ReadLine();
@@ -49,18 +49,26 @@ namespace ProjetoInlog
 
         public void AdicionaVeiculo()
         {
-            DadosDosVeiculos.Add("Chassi");
-            Veiculos_adicionados.Add(Chassi);
+            if (Veiculos_adicionados.Contains(Chassi))
+            {
+                Console.WriteLine("Nao foi possivel completar a operacao.");
+                Console.WriteLine("Veículo duplicado");
+            }
 
-            DadosDosVeiculos.Add("Tipo");
-            Veiculos_adicionados.Add(Tipo);
+            else
+            {
+                DadosDosVeiculos.Add("Chassi");
+                Veiculos_adicionados.Add(Chassi);
 
-            DadosDosVeiculos.Add("NumPassageiros");
-            Veiculos_adicionados.Add(NumPassageiros);
+                DadosDosVeiculos.Add("Tipo");
+                Veiculos_adicionados.Add(Tipo);
 
-            DadosDosVeiculos.Add("Cor");
-            Veiculos_adicionados.Add(Cor);
+                DadosDosVeiculos.Add("NumPassageiros");
+                Veiculos_adicionados.Add(NumPassageiros);
 
+                DadosDosVeiculos.Add("Cor");
+                Veiculos_adicionados.Add(Cor);
+            }
         }
 
         public void Exibir()
@@ -147,5 +155,6 @@ namespace ProjetoInlog
             Veiculos_adicionados[Indice+3] = Console.ReadLine();
             Console.WriteLine("Cor alterada!");
         }
+
     }
 }
