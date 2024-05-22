@@ -32,6 +32,13 @@ namespace ProjetoInlog
                 "Tipo: ");
             IdTipoVeiculo = int.Parse(Console.ReadLine());
 
+            while (IdTipoVeiculo <1 || IdTipoVeiculo > 2)
+            {
+                Console.WriteLine("Opção invalida!");
+                Console.Write("Digite qual a opção desejada: ");
+                IdTipoVeiculo = int.Parse(Console.ReadLine());
+            }
+
             if (IdTipoVeiculo == 1)
             {
                 TipoVeiculo = "CAMINHAO";
@@ -80,6 +87,10 @@ namespace ProjetoInlog
 
                 // Pula uma linha após listar os dados de um veículo
                 if (item % 4 == 0) { Console.WriteLine(""); } 
+            }
+            if (VeiculosAdicionados.Count == 0)
+            {
+                Console.WriteLine("Nenhum veiculo adicionado.");
             }
 
         }
@@ -130,6 +141,7 @@ namespace ProjetoInlog
             if (chassi_para_busca != chassi_salvo_na_lista_veiculos)
             {
                 Console.WriteLine("Chassi não encontrado!");
+                Indice = 999;
             }
         }
 
@@ -138,29 +150,36 @@ namespace ProjetoInlog
             // Primeiro filtra o veículo pelo chassi
             Filtrar();
 
-            Console.WriteLine(" ");
-            Console.WriteLine("[1] SIM\n" +
-                "[2] NAO");
-            Console.Write("Deseja realmente deletar o veículo acima?");
-
-            // solicita confirmacao para deletar, caso for sim, deleta o veículo
-            int confirma_del = int.Parse(Console.ReadLine());
-            if (confirma_del == 1)
+            if (Indice != 999)
             {
-                IdVeiculosAdicionados.RemoveRange(Indice, Indice +4);
-                VeiculosAdicionados.RemoveRange(Indice, Indice +4);
-                Console.WriteLine("Veículo deletado.");
+                Console.WriteLine(" ");
+                Console.WriteLine("[1] SIM\n" +
+                    "[2] NAO");
+                Console.Write("Deseja realmente deletar o veículo acima?");
+
+                // solicita confirmacao para deletar, caso for sim, deleta o veículo
+                int confirma_del = int.Parse(Console.ReadLine());
+                if (confirma_del == 1)
+                {
+                    IdVeiculosAdicionados.RemoveRange(Indice, Indice + 4);
+                    VeiculosAdicionados.RemoveRange(Indice, Indice + 4);
+                    Console.WriteLine("Veículo deletado.");
+                }
             }
         }
 
         public void Editar()
         {
             Filtrar();
-            Console.WriteLine(" ");
-            Console.WriteLine("A unica opcao disponivel para editar, é a cor.");
-            Console.Write("Digite a nova cor: ");
-            VeiculosAdicionados[Indice+3] = Console.ReadLine();
-            Console.WriteLine("Cor alterada!");
+            if (Indice != 999)
+            {
+                Console.WriteLine(" ");
+                Console.WriteLine("A unica opcao disponivel para editar, é a cor.");
+                Console.Write("Digite a nova cor: ");
+                VeiculosAdicionados[Indice + 3] = Console.ReadLine();
+                Console.WriteLine("Cor alterada!");
+            }
+            
         }
 
     }

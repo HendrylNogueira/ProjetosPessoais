@@ -17,8 +17,16 @@
                     "[99] SAIR");
 
                 Console.Write("Digite qual a opção desejada: ");
+
                 int opcao = int.Parse(Console.ReadLine());
 
+                while (opcao <1 || opcao > 5)
+                {
+                    if (opcao == 99) { break; }
+                    Console.WriteLine("Opção invalida!");
+                    Console.Write("Digite qual a opção desejada: ");
+                    opcao = int.Parse(Console.ReadLine());
+                }
                 if (opcao == 1)
                 {
                     veiculo.LerDadosDoVeiculo();
@@ -49,6 +57,7 @@
                 {
                     if (veiculo.ConfirmaSair() == true) { break; }
                 }
+
             }
         }
     }
