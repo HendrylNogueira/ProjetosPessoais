@@ -21,7 +21,7 @@
 
                 if (opcao == 1)
                 {
-                    veiculo.Inserir();
+                    veiculo.LerDadosDoVeiculo();
                     veiculo.AdicionaVeiculo();
                 }
 
@@ -37,7 +37,7 @@
 
                 else if (opcao == 4)
                 {
-                    veiculo.Exibir();
+                    veiculo.ListarVeiculos();
                 }
 
                 else if (opcao == 5)
