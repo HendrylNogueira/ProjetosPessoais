@@ -1,0 +1,10 @@
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
