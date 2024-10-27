@@ -1,0 +1,192 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    background-color: rgb(229, 228, 228);
+    color: rgb(0, 0, 0);
+
+    padding: 1px;
+    max-width: 800px;
+    border-radius: 15px;
+}
+
+#cabecalho{
+    background-color: rgb(0, 145, 255);
+    text-align: center;
+    padding: 1px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    max-width: 100%;
+}
+
+#mapa{
+    margin: 15px;
+    background-color: rgb(0, 145, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+#name{
+    background-color: rgb(0, 145, 255);
+    color: white;
+    margin: 15px;
+    height: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+
+#divimagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    max-width: 750px;
+}
+
+#imagem1{
+    max-width: 200px;
+    height: 140px;
+    margin: 4px;
+    justify-content: left;
+    border-radius: 8px;
+}
+
+#imagem2{
+    max-width: 200px;
+    height: 140px;
+    margin: 4px;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+#imagem3{
+    max-width: 200px;
+    height: 140px;
+    margin: 4px;
+    justify-content: right;
+    border-radius: 8px;
+}
+
+#formulario{
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+    max-width: 480px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#divformulario{
+    max-width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    background-color: rgb(0, 145, 255);
+    border-radius: 10px;
+    width: 400px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+#buttoncarne{
+    background-color: rgb(0, 145, 255);
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+#buttonmarmita{
+    background-color: rgb(0, 145, 255);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+#inputhomens{
+    border-radius: 8px;
+    width: 400px;
+    height: 20px;
+}
+#inputmulheres{
+    border-radius: 8px;
+    width: 400px;
+    height: 20px;
+}
+#inputcriancas{
+    border-radius: 8px;
+    width: 250px;
+    height: 20px;
+    align-items: end;
+}
+#inputvalor{
+    border-radius: 8px;
+    width: 100px;
+    height: 20px;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.divoutput{
+    height: 100px;
+    max-width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#listaOutput{
+    height: 100px;
+    max-width: 480px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo_lista{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

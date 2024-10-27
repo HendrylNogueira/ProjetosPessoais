@@ -1,0 +1,5 @@
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\test_app_desktop\test_app_desktop\obj\Debug\test_app_desktop.csproj.AssemblyReference.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\test_app_desktop\test_app_desktop\obj\Debug\test_app_desktop.Form1.resources
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\test_app_desktop\test_app_desktop\obj\Debug\test_app_desktop.Properties.Resources.resources
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\test_app_desktop\test_app_desktop\obj\Debug\test_app_desktop.csproj.GenerateResource.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\test_app_desktop\test_app_desktop\obj\Debug\test_app_desktop.csproj.CoreCompileInputs.cache
