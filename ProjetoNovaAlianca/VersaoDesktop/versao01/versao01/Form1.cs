@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -57,7 +58,7 @@ namespace versao01
         private string CarnesSelecionadas()
         {
             string texto = "Não deu certo";
-            if (carne1.Checked == true || carne2.Checked == true)
+            if (carne1.Checked == true || carne2.Checked == true || carne3.Checked == true || carne4.Checked == true)
             {
                 texto = "";
                 if (carne1.Checked == true)
@@ -108,10 +109,15 @@ namespace versao01
 
         private string TextoImpressao()
         {
-            return "Pedido de Marmita\n" +
-                "\nTamanho: " + TamanhoMarmita() +
-                "\nCarnes: " + CarnesSelecionadas() + "\n"
-                + "\nForma de pagamento: " + FormaDePagamento();
+            return "Restaurante Nova Alianca\n" + "\n" +
+                QuantidadeMarmitas() + " " +
+                TamanhoMarmita() +
+                "\nCarnes: " + CarnesSelecionadas() + "\n" +
+                "Observacoes: " + TextoObservacoes() + "\n" + "\n" + "\n" +
+                "Valor total: " + TextoValorTotal() + "\n" +
+                "\nForma de pagamento: " + FormaDePagamento() + "\n" + 
+                "\nEndereco: " + TextoEndereco()
+                ;
         }
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
@@ -147,6 +153,25 @@ namespace versao01
                     }
                 }
             }
+        }
+        private string TextoObservacoes() 
+        {
+            return caixa_de_texto_obs.Text;
+        }
+
+        private string TextoEndereco()
+        {
+            return caixa_de_texto_endereco.Text;
+        }
+
+        private string TextoValorTotal()
+        {
+            return caixa_de_texto_valor_total.Text;
+        }
+
+        private string QuantidadeMarmitas()
+        {
+            return quantidade_marmitas.Value.ToString();
         }
 
     }

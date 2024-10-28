@@ -47,6 +47,10 @@ namespace versao01
             this.Box_forma_de_pagamento = new System.Windows.Forms.CheckedListBox();
             this.Box_tamanho_marmitas = new System.Windows.Forms.CheckedListBox();
             this.label_tamanho_marmitas = new System.Windows.Forms.Label();
+            this.quantidade_marmitas = new System.Windows.Forms.NumericUpDown();
+            this.caixa_de_texto_valor_total = new System.Windows.Forms.TextBox();
+            this.label_valor = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.quantidade_marmitas)).BeginInit();
             this.SuspendLayout();
             // 
             // botao_imprimir
@@ -67,7 +71,7 @@ namespace versao01
             // impressora_combo_box
             // 
             this.impressora_combo_box.FormattingEnabled = true;
-            this.impressora_combo_box.Location = new System.Drawing.Point(22, 547);
+            this.impressora_combo_box.Location = new System.Drawing.Point(22, 573);
             this.impressora_combo_box.Name = "impressora_combo_box";
             this.impressora_combo_box.Size = new System.Drawing.Size(202, 24);
             this.impressora_combo_box.TabIndex = 1;
@@ -75,7 +79,7 @@ namespace versao01
             // label_selecione_impressora
             // 
             this.label_selecione_impressora.AutoSize = true;
-            this.label_selecione_impressora.Location = new System.Drawing.Point(19, 528);
+            this.label_selecione_impressora.Location = new System.Drawing.Point(19, 554);
             this.label_selecione_impressora.Name = "label_selecione_impressora";
             this.label_selecione_impressora.Size = new System.Drawing.Size(150, 16);
             this.label_selecione_impressora.TabIndex = 2;
@@ -84,7 +88,7 @@ namespace versao01
             // carne1
             // 
             this.carne1.AutoSize = true;
-            this.carne1.Location = new System.Drawing.Point(22, 139);
+            this.carne1.Location = new System.Drawing.Point(22, 149);
             this.carne1.Name = "carne1";
             this.carne1.Size = new System.Drawing.Size(111, 20);
             this.carne1.TabIndex = 3;
@@ -94,7 +98,7 @@ namespace versao01
             // carne2
             // 
             this.carne2.AutoSize = true;
-            this.carne2.Location = new System.Drawing.Point(22, 165);
+            this.carne2.Location = new System.Drawing.Point(22, 175);
             this.carne2.Name = "carne2";
             this.carne2.Size = new System.Drawing.Size(52, 20);
             this.carne2.TabIndex = 4;
@@ -104,7 +108,7 @@ namespace versao01
             // carne3
             // 
             this.carne3.AutoSize = true;
-            this.carne3.Location = new System.Drawing.Point(22, 191);
+            this.carne3.Location = new System.Drawing.Point(22, 201);
             this.carne3.Name = "carne3";
             this.carne3.Size = new System.Drawing.Size(74, 20);
             this.carne3.TabIndex = 5;
@@ -114,7 +118,7 @@ namespace versao01
             // carne4
             // 
             this.carne4.AutoSize = true;
-            this.carne4.Location = new System.Drawing.Point(22, 217);
+            this.carne4.Location = new System.Drawing.Point(22, 227);
             this.carne4.Name = "carne4";
             this.carne4.Size = new System.Drawing.Size(54, 20);
             this.carne4.TabIndex = 6;
@@ -124,7 +128,7 @@ namespace versao01
             // label_selecione_carnes
             // 
             this.label_selecione_carnes.AutoSize = true;
-            this.label_selecione_carnes.Location = new System.Drawing.Point(19, 120);
+            this.label_selecione_carnes.Location = new System.Drawing.Point(19, 130);
             this.label_selecione_carnes.Name = "label_selecione_carnes";
             this.label_selecione_carnes.Size = new System.Drawing.Size(130, 16);
             this.label_selecione_carnes.TabIndex = 7;
@@ -133,7 +137,7 @@ namespace versao01
             // label_forma_pagamento
             // 
             this.label_forma_pagamento.AutoSize = true;
-            this.label_forma_pagamento.Location = new System.Drawing.Point(19, 250);
+            this.label_forma_pagamento.Location = new System.Drawing.Point(19, 305);
             this.label_forma_pagamento.Name = "label_forma_pagamento";
             this.label_forma_pagamento.Size = new System.Drawing.Size(207, 16);
             this.label_forma_pagamento.TabIndex = 8;
@@ -141,7 +145,7 @@ namespace versao01
             // 
             // caixa_de_texto_obs
             // 
-            this.caixa_de_texto_obs.Location = new System.Drawing.Point(22, 385);
+            this.caixa_de_texto_obs.Location = new System.Drawing.Point(22, 423);
             this.caixa_de_texto_obs.Multiline = true;
             this.caixa_de_texto_obs.Name = "caixa_de_texto_obs";
             this.caixa_de_texto_obs.Size = new System.Drawing.Size(238, 65);
@@ -150,7 +154,7 @@ namespace versao01
             // label_obs
             // 
             this.label_obs.AutoSize = true;
-            this.label_obs.Location = new System.Drawing.Point(19, 350);
+            this.label_obs.Location = new System.Drawing.Point(19, 404);
             this.label_obs.Name = "label_obs";
             this.label_obs.Size = new System.Drawing.Size(89, 16);
             this.label_obs.TabIndex = 13;
@@ -159,7 +163,7 @@ namespace versao01
             // label_endereco
             // 
             this.label_endereco.AutoSize = true;
-            this.label_endereco.Location = new System.Drawing.Point(19, 464);
+            this.label_endereco.Location = new System.Drawing.Point(19, 500);
             this.label_endereco.Name = "label_endereco";
             this.label_endereco.Size = new System.Drawing.Size(66, 16);
             this.label_endereco.TabIndex = 14;
@@ -167,7 +171,7 @@ namespace versao01
             // 
             // caixa_de_texto_endereco
             // 
-            this.caixa_de_texto_endereco.Location = new System.Drawing.Point(22, 493);
+            this.caixa_de_texto_endereco.Location = new System.Drawing.Point(22, 519);
             this.caixa_de_texto_endereco.Name = "caixa_de_texto_endereco";
             this.caixa_de_texto_endereco.Size = new System.Drawing.Size(238, 22);
             this.caixa_de_texto_endereco.TabIndex = 15;
@@ -182,7 +186,7 @@ namespace versao01
             "Pix",
             "Dinheiro",
             "Cartao"});
-            this.Box_forma_de_pagamento.Location = new System.Drawing.Point(22, 269);
+            this.Box_forma_de_pagamento.Location = new System.Drawing.Point(22, 324);
             this.Box_forma_de_pagamento.Name = "Box_forma_de_pagamento";
             this.Box_forma_de_pagamento.Size = new System.Drawing.Size(238, 68);
             this.Box_forma_de_pagamento.TabIndex = 16;
@@ -196,7 +200,7 @@ namespace versao01
             "Pequena",
             "Media",
             "Grande"});
-            this.Box_tamanho_marmitas.Location = new System.Drawing.Point(22, 43);
+            this.Box_tamanho_marmitas.Location = new System.Drawing.Point(22, 59);
             this.Box_tamanho_marmitas.Name = "Box_tamanho_marmitas";
             this.Box_tamanho_marmitas.Size = new System.Drawing.Size(238, 68);
             this.Box_tamanho_marmitas.TabIndex = 16;
@@ -204,17 +208,48 @@ namespace versao01
             // label_tamanho_marmitas
             // 
             this.label_tamanho_marmitas.AutoSize = true;
-            this.label_tamanho_marmitas.Location = new System.Drawing.Point(22, 21);
+            this.label_tamanho_marmitas.Location = new System.Drawing.Point(19, 9);
             this.label_tamanho_marmitas.Name = "label_tamanho_marmitas";
-            this.label_tamanho_marmitas.Size = new System.Drawing.Size(263, 20);
+            this.label_tamanho_marmitas.Size = new System.Drawing.Size(216, 16);
             this.label_tamanho_marmitas.TabIndex = 18;
-            this.label_tamanho_marmitas.Text = "Selecione o Tamanho da marmita";
+            this.label_tamanho_marmitas.Text = "Selecione o tamanho e quantidade";
+            // 
+            // quantidade_marmitas
+            // 
+            this.quantidade_marmitas.Location = new System.Drawing.Point(23, 31);
+            this.quantidade_marmitas.Name = "quantidade_marmitas";
+            this.quantidade_marmitas.Size = new System.Drawing.Size(62, 22);
+            this.quantidade_marmitas.TabIndex = 19;
+            this.quantidade_marmitas.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // caixa_de_texto_valor_total
+            // 
+            this.caixa_de_texto_valor_total.Location = new System.Drawing.Point(22, 280);
+            this.caixa_de_texto_valor_total.Name = "caixa_de_texto_valor_total";
+            this.caixa_de_texto_valor_total.Size = new System.Drawing.Size(147, 22);
+            this.caixa_de_texto_valor_total.TabIndex = 20;
+            // 
+            // label_valor
+            // 
+            this.label_valor.AutoSize = true;
+            this.label_valor.Location = new System.Drawing.Point(19, 261);
+            this.label_valor.Name = "label_valor";
+            this.label_valor.Size = new System.Drawing.Size(67, 16);
+            this.label_valor.TabIndex = 21;
+            this.label_valor.Text = "Valor total";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 730);
+            this.Controls.Add(this.label_valor);
+            this.Controls.Add(this.caixa_de_texto_valor_total);
+            this.Controls.Add(this.quantidade_marmitas);
             this.Controls.Add(this.label_tamanho_marmitas);
             this.Controls.Add(this.Box_tamanho_marmitas);
             this.Controls.Add(this.Box_forma_de_pagamento);
@@ -232,8 +267,9 @@ namespace versao01
             this.Controls.Add(this.impressora_combo_box);
             this.Controls.Add(this.botao_imprimir);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Restaurante Nova Alianca";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.quantidade_marmitas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,6 +295,9 @@ namespace versao01
         private CheckedListBox Box_forma_de_pagamento;
         private CheckedListBox Box_tamanho_marmitas;
         private Label label_tamanho_marmitas;
+        private NumericUpDown quantidade_marmitas;
+        private TextBox caixa_de_texto_valor_total;
+        private Label label_valor;
     }
 }
 
