@@ -44,6 +44,13 @@ namespace versao01
             // botão que faz acontecer
             printDocument1.PrinterSettings.PrinterName = impressora_combo_box.SelectedItem.ToString();
             printDocument1.Print();
+            DesmarcarItensBoxTamanhoMarmita();
+            DesmarcarItensBoxCarnes();
+            caixa_de_texto_valor_total.Clear();
+            DesmarcarItensBoxFormaPagamento();
+            tb_Troco.Clear();
+            caixa_de_texto_obs.Clear();
+            caixa_de_texto_endereco.Clear();
         }
         
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
@@ -54,6 +61,28 @@ namespace versao01
 
             // Desenhar o texto na página
             e.Graphics.DrawString(texto, fonte, Brushes.Black, new PointF(10, 10));
+        }
+
+        private void DesmarcarItensBoxTamanhoMarmita()
+        {
+            for (int i = 0; i < Box_tamanho_marmitas.Items.Count; i++)
+            {
+                Box_tamanho_marmitas.SetItemChecked(i, false); // Desmarca o item na posição i
+            }
+        }
+        private void DesmarcarItensBoxCarnes()
+        {
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                checkedListBox1.SetItemChecked(i, false); // Desmarca o item na posição i
+            }
+        }
+        private void DesmarcarItensBoxFormaPagamento()
+        {
+            for (int i = 0; i < Box_forma_de_pagamento.Items.Count; i++)
+            {
+                Box_forma_de_pagamento.SetItemChecked(i, false); // Desmarca o item na posição i
+            }
         }
 
         private string CarnesSelecionadas() 
@@ -98,7 +127,7 @@ namespace versao01
         private string TextoImpressao()
         {
             return "--------------------------------------\n" + 
-                "Restaurante Nova Alianca\n" +
+                "  Restaurante Nova Alianca\n" +
                 "--------------------------------------\n" +
                 QuantidadeMarmitas() + " " +
                 TamanhoMarmita() +
@@ -106,9 +135,10 @@ namespace versao01
                 "Observacoes: " + TextoObservacoes() + "\n" + "\n" + "\n" +
                 "Valor total: " + TextoValorTotal() + "\n" +
                 "\nForma de pagamento: " + FormaDePagamento() + "\n" + 
+                "Troco: " + Troco() + "\n" +
                 "\nEndereco: " + TextoEndereco() + "\n" + "\n" +
                 "\n" + "\n" +
-                "--------------------------------------"
+                "--------------------------------------" + "\n"
                 ;
         }
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
@@ -146,6 +176,11 @@ namespace versao01
         private string QuantidadeMarmitas()
         {
             return quantidade_marmitas.Value.ToString();
+        }
+
+        private string Troco()
+        {
+            return tb_Troco.Text;
         }
 
         private void btn_ConfigCarnes_Click(object sender, EventArgs e)

@@ -54,6 +54,8 @@ namespace versao01
             this.btn_ResetarCarnes = new System.Windows.Forms.Button();
             this.btn_editarCarnes = new System.Windows.Forms.Button();
             this.btn_SalvarCarnes = new System.Windows.Forms.Button();
+            this.tb_Troco = new System.Windows.Forms.TextBox();
+            this.label_troco = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.quantidade_marmitas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,7 +144,7 @@ namespace versao01
             // 
             // Box_forma_de_pagamento
             // 
-            this.Box_forma_de_pagamento.BackColor = System.Drawing.SystemColors.Window;
+            this.Box_forma_de_pagamento.BackColor = System.Drawing.SystemColors.Control;
             this.Box_forma_de_pagamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Box_forma_de_pagamento.CheckOnClick = true;
             this.Box_forma_de_pagamento.FormattingEnabled = true;
@@ -157,6 +159,7 @@ namespace versao01
             // 
             // Box_tamanho_marmitas
             // 
+            this.Box_tamanho_marmitas.BackColor = System.Drawing.SystemColors.Control;
             this.Box_tamanho_marmitas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Box_tamanho_marmitas.CheckOnClick = true;
             this.Box_tamanho_marmitas.FormattingEnabled = true;
@@ -208,6 +211,7 @@ namespace versao01
             // 
             // checkedListBox1
             // 
+            this.checkedListBox1.BackColor = System.Drawing.SystemColors.Control;
             this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
@@ -217,7 +221,7 @@ namespace versao01
             "Ovo"});
             this.checkedListBox1.Location = new System.Drawing.Point(23, 149);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(209, 106);
+            this.checkedListBox1.Size = new System.Drawing.Size(237, 106);
             this.checkedListBox1.TabIndex = 22;
             // 
             // btn_ConfigCarnes
@@ -291,11 +295,30 @@ namespace versao01
             this.btn_SalvarCarnes.UseVisualStyleBackColor = true;
             this.btn_SalvarCarnes.Click += new System.EventHandler(this.btn_SalvarCarnes_Click);
             // 
+            // tb_Troco
+            // 
+            this.tb_Troco.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Troco.Location = new System.Drawing.Point(160, 370);
+            this.tb_Troco.Name = "tb_Troco";
+            this.tb_Troco.Size = new System.Drawing.Size(100, 22);
+            this.tb_Troco.TabIndex = 30;
+            // 
+            // label_troco
+            // 
+            this.label_troco.AutoSize = true;
+            this.label_troco.Location = new System.Drawing.Point(108, 376);
+            this.label_troco.Name = "label_troco";
+            this.label_troco.Size = new System.Drawing.Size(46, 16);
+            this.label_troco.TabIndex = 31;
+            this.label_troco.Text = "Troco:";
+            // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 730);
+            this.Controls.Add(this.label_troco);
+            this.Controls.Add(this.tb_Troco);
             this.Controls.Add(this.btn_SalvarCarnes);
             this.Controls.Add(this.btn_editarCarnes);
             this.Controls.Add(this.btn_ResetarCarnes);
@@ -355,6 +378,8 @@ namespace versao01
         private Button btn_ResetarCarnes;
         private Button btn_editarCarnes;
         private Button btn_SalvarCarnes;
+        private TextBox tb_Troco;
+        private Label label_troco;
     }
 }
 
