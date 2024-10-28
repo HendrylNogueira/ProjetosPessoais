@@ -1,0 +1,11 @@
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\bin\Debug\versao01.exe.config
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\bin\Debug\versao01.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\bin\Debug\versao01.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao02.csproj.AssemblyReference.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao01.Properties.Resources.resources
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao02.csproj.GenerateResource.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao02.csproj.CoreCompileInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao01.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao01.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao01.ConfigurarCarnesForm.resources
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao01.Pedidos.resources
