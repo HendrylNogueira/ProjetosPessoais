@@ -17,8 +17,20 @@ namespace versao01
     public partial class Pedidos : Form
     {
         private PrintDocument printDocument = new PrintDocument();
+        public class Pedido
+        {
+            public string Quantidade { get; set; }
+            public string Tamanho { get; set; }
+            public string Carnes { get; set; }
+            public string Observacoes { get; set; }
+            public string Endereco { get; set; }
+            public string ValorTotal { get; set; }
+            public string FormaPagamento { get; set; }
+        }
 
-        
+        List<Pedido> carrinho = new List<Pedido>();
+        List<string> carrinho1 = new List<string>();
+
         public Pedidos()
         {
             InitializeComponent();
@@ -41,7 +53,7 @@ namespace versao01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // botão que faz acontecer
+            // botão que Imprime
             printDocument1.PrinterSettings.PrinterName = impressora_combo_box.SelectedItem.ToString();
             printDocument1.Print();
             DesmarcarItensBoxTamanhoMarmita();
@@ -126,20 +138,9 @@ namespace versao01
 
         private string TextoImpressao()
         {
-            return "--------------------------------------\n" + 
-                "  Restaurante Nova Alianca\n" +
-                "--------------------------------------\n" +
-                QuantidadeMarmitas() + " " +
-                TamanhoMarmita() +
-                "\nCarnes: " + CarnesSelecionadas() + "\n" +
-                "Observacoes: " + TextoObservacoes() + "\n" + "\n" + "\n" +
-                "Valor total: " + TextoValorTotal() + "\n" +
-                "\nForma de pagamento: " + FormaDePagamento() + "\n" + 
-                "Troco: " + Troco() + "\n" +
-                "\nEndereco: " + TextoEndereco() + "\n" + "\n" +
-                "\n" + "\n" +
-                "--------------------------------------" + "\n"
-                ;
+            return TextoCabecalho() +
+                PedidoCliente() +
+                TextoRodaPe();
         }
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
@@ -178,15 +179,9 @@ namespace versao01
             return quantidade_marmitas.Value.ToString();
         }
 
-        private string Troco()
+        private string TextTroco()
         {
             return tb_Troco.Text;
-        }
-
-        private void btn_ConfigCarnes_Click(object sender, EventArgs e)
-        {
-            ConfigurarCarnesForm ConfigCarnesForm = new ConfigurarCarnesForm(); // Cria uma nova instância do formulário
-            ConfigCarnesForm.Show(); // Exibe o formulário em uma nova janela
         }
 
         private void btn_AdicionarCarnes_Click(object sender, EventArgs e)
@@ -231,6 +226,50 @@ namespace versao01
             btn_AdicionarCarnes.Visible = false;
             tb_AdicionarCarne.Visible = false;
         }
+        
+        private string TextoCabecalho()
+        {
+            return "--------------------------------------\n" +
+                "  Restaurante Nova Alianca\n" +
+                "--------------------------------------\n";
+        }
+        private string TextoRodaPe()
+        {
+            return "--------------------------------------\n" + "\n" +
+                "Valor total: " + TextoValorTotal() + "\n" +
+                "\nForma de pagamento: " + FormaDePagamento() + "\n" +
+                "Troco: " + TextTroco() + "\n" +
+                "\nEndereco: " + TextoEndereco() + "\n" + "\n" +
+                "\n" + "\n" +
+                "--------------------------------------\n" +
+                "  Fim do pedido\n" +
+                "--------------------------------------\n";
+        }
+        private void btn_AddCarrinho_Click(object sender, EventArgs e)
+        {
+            carrinho1.Add(
+                QuantidadeMarmitas() + " " +
+                TamanhoMarmita() +
+                "\nCarnes: " + CarnesSelecionadas() + "\n" +
+                "Observacoes: " + TextoObservacoes() + "\n" + "\n"
+                );
+            DesmarcarItensBoxTamanhoMarmita();
+            DesmarcarItensBoxCarnes();
+            caixa_de_texto_valor_total.Clear();
+            DesmarcarItensBoxFormaPagamento();
+            tb_Troco.Clear();
+            caixa_de_texto_obs.Clear();
+            caixa_de_texto_endereco.Clear();
+        }
 
+        private string PedidoCliente()
+        {
+            string texto = "";
+            foreach (var item in carrinho1)
+            {
+                texto += item.ToString();
+            }
+            return texto;
+        }
     }
 }

@@ -46,13 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfiguracoesSistema.cs" />
-    <Compile Include="ConfigurarCarnesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfigurarCarnesForm.Designer.cs">
-      <DependentUpon>ConfigurarCarnesForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ConfigurarCarnesForm.resx">
-      <DependentUpon>ConfigurarCarnesForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pedidos.resx">
       <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
