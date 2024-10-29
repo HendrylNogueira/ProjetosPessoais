@@ -59,6 +59,7 @@ namespace versao01
             this.btn_AddCarrinho = new System.Windows.Forms.Button();
             this.tb_ItensNoCarrinho = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_LimparCarrinho = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.quantidade_marmitas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -311,7 +312,7 @@ namespace versao01
             this.btn_AddCarrinho.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_AddCarrinho.Location = new System.Drawing.Point(22, 348);
             this.btn_AddCarrinho.Name = "btn_AddCarrinho";
-            this.btn_AddCarrinho.Size = new System.Drawing.Size(238, 43);
+            this.btn_AddCarrinho.Size = new System.Drawing.Size(127, 43);
             this.btn_AddCarrinho.TabIndex = 32;
             this.btn_AddCarrinho.Text = "Adicionar ao carrinho";
             this.btn_AddCarrinho.UseVisualStyleBackColor = false;
@@ -334,11 +335,23 @@ namespace versao01
             this.label1.TabIndex = 35;
             this.label1.Text = "Itens no Carrinho";
             // 
+            // btn_LimparCarrinho
+            // 
+            this.btn_LimparCarrinho.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_LimparCarrinho.Location = new System.Drawing.Point(155, 348);
+            this.btn_LimparCarrinho.Name = "btn_LimparCarrinho";
+            this.btn_LimparCarrinho.Size = new System.Drawing.Size(105, 43);
+            this.btn_LimparCarrinho.TabIndex = 36;
+            this.btn_LimparCarrinho.Text = "Limpar Carrinho";
+            this.btn_LimparCarrinho.UseVisualStyleBackColor = false;
+            this.btn_LimparCarrinho.Click += new System.EventHandler(this.btn_LimparCarrinho_Click);
+            // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 1055);
+            this.Controls.Add(this.btn_LimparCarrinho);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_ItensNoCarrinho);
             this.Controls.Add(this.btn_AddCarrinho);
@@ -407,6 +420,7 @@ namespace versao01
         private Button btn_AddCarrinho;
         private TextBox tb_ItensNoCarrinho;
         private Label label1;
+        private Button btn_LimparCarrinho;
     }
 }
 

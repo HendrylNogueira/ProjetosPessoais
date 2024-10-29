@@ -276,6 +276,10 @@ namespace versao01
             return texto;
         }
 
-        
+        private void btn_LimparCarrinho_Click(object sender, EventArgs e)
+        {
+            carrinho1.Clear();
+            tb_ItensNoCarrinho.Clear();
+        }
     }
 }
