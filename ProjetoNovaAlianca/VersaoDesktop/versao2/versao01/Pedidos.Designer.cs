@@ -30,6 +30,7 @@ namespace versao01
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             this.botao_imprimir = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.impressora_combo_box = new System.Windows.Forms.ComboBox();
@@ -344,6 +345,7 @@ namespace versao01
             this.Controls.Add(this.label_selecione_impressora);
             this.Controls.Add(this.impressora_combo_box);
             this.Controls.Add(this.botao_imprimir);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pedidos";
             this.Text = "Restaurante Nova Alianca";
             this.Load += new System.EventHandler(this.Form1_Load);
