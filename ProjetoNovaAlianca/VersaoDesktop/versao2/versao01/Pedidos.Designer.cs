@@ -155,7 +155,7 @@ namespace versao01
             "Dinheiro"});
             this.Box_forma_de_pagamento.Location = new System.Drawing.Point(23, 502);
             this.Box_forma_de_pagamento.Name = "Box_forma_de_pagamento";
-            this.Box_forma_de_pagamento.Size = new System.Drawing.Size(238, 51);
+            this.Box_forma_de_pagamento.Size = new System.Drawing.Size(238, 68);
             this.Box_forma_de_pagamento.TabIndex = 16;
             // 
             // Box_tamanho_marmitas
@@ -290,7 +290,7 @@ namespace versao01
             // tb_Troco
             // 
             this.tb_Troco.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_Troco.Location = new System.Drawing.Point(161, 532);
+            this.tb_Troco.Location = new System.Drawing.Point(196, 534);
             this.tb_Troco.Name = "tb_Troco";
             this.tb_Troco.Size = new System.Drawing.Size(100, 22);
             this.tb_Troco.TabIndex = 30;
@@ -298,7 +298,7 @@ namespace versao01
             // label_troco
             // 
             this.label_troco.AutoSize = true;
-            this.label_troco.Location = new System.Drawing.Point(109, 537);
+            this.label_troco.Location = new System.Drawing.Point(144, 540);
             this.label_troco.Name = "label_troco";
             this.label_troco.Size = new System.Drawing.Size(46, 16);
             this.label_troco.TabIndex = 31;
