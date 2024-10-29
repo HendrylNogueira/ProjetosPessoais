@@ -57,6 +57,8 @@ namespace versao01
             this.tb_Troco = new System.Windows.Forms.TextBox();
             this.label_troco = new System.Windows.Forms.Label();
             this.btn_AddCarrinho = new System.Windows.Forms.Button();
+            this.tb_ItensNoCarrinho = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.quantidade_marmitas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -315,11 +317,30 @@ namespace versao01
             this.btn_AddCarrinho.UseVisualStyleBackColor = false;
             this.btn_AddCarrinho.Click += new System.EventHandler(this.btn_AddCarrinho_Click);
             // 
+            // tb_ItensNoCarrinho
+            // 
+            this.tb_ItensNoCarrinho.Location = new System.Drawing.Point(12, 750);
+            this.tb_ItensNoCarrinho.Multiline = true;
+            this.tb_ItensNoCarrinho.Name = "tb_ItensNoCarrinho";
+            this.tb_ItensNoCarrinho.Size = new System.Drawing.Size(274, 215);
+            this.tb_ItensNoCarrinho.TabIndex = 34;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 731);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 16);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Itens no Carrinho";
+            // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 730);
+            this.ClientSize = new System.Drawing.Size(563, 1055);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tb_ItensNoCarrinho);
             this.Controls.Add(this.btn_AddCarrinho);
             this.Controls.Add(this.label_troco);
             this.Controls.Add(this.tb_Troco);
@@ -384,6 +405,8 @@ namespace versao01
         private TextBox tb_Troco;
         private Label label_troco;
         private Button btn_AddCarrinho;
+        private TextBox tb_ItensNoCarrinho;
+        private Label label1;
     }
 }
 

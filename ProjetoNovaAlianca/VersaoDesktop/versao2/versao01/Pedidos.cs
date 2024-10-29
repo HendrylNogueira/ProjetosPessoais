@@ -63,6 +63,7 @@ namespace versao01
             tb_Troco.Clear();
             caixa_de_texto_obs.Clear();
             caixa_de_texto_endereco.Clear();
+            tb_ItensNoCarrinho.Clear();
         }
         
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
@@ -260,6 +261,8 @@ namespace versao01
             tb_Troco.Clear();
             caixa_de_texto_obs.Clear();
             caixa_de_texto_endereco.Clear();
+            tb_ItensNoCarrinho.Text += PedidoCliente();
+            tb_ItensNoCarrinho.Text += "\n";
         }
 
         private string PedidoCliente()
@@ -269,7 +272,10 @@ namespace versao01
             {
                 texto += item.ToString();
             }
+            texto += "\n";
             return texto;
         }
+
+        
     }
 }
