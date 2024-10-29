@@ -1,0 +1,10 @@
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\bin\Debug\NovaAlianca.exe.config
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\bin\Debug\NovaAlianca.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\bin\Debug\NovaAlianca.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\Pedidos.csproj.AssemblyReference.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\versao01.Pedidos.resources
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\NovaAlianca.Properties.Resources.resources
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\Pedidos.csproj.GenerateResource.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\Pedidos.csproj.CoreCompileInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\NovaAlianca.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoNovaAlianca\VersaoDesktop\versao2\versao01\obj\Debug\NovaAlianca.pdb
