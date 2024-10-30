@@ -65,7 +65,7 @@ namespace versao01
             // 
             // botao_imprimir
             // 
-            this.botao_imprimir.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.botao_imprimir.BackColor = System.Drawing.Color.Green;
             this.botao_imprimir.Location = new System.Drawing.Point(22, 681);
             this.botao_imprimir.Name = "botao_imprimir";
             this.botao_imprimir.Size = new System.Drawing.Size(239, 37);
@@ -320,6 +320,7 @@ namespace versao01
             // 
             // tb_ItensNoCarrinho
             // 
+            this.tb_ItensNoCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.tb_ItensNoCarrinho.Location = new System.Drawing.Point(12, 750);
             this.tb_ItensNoCarrinho.Multiline = true;
             this.tb_ItensNoCarrinho.Name = "tb_ItensNoCarrinho";
@@ -329,15 +330,16 @@ namespace versao01
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(20, 731);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 16);
+            this.label1.Size = new System.Drawing.Size(239, 16);
             this.label1.TabIndex = 35;
-            this.label1.Text = "Itens no Carrinho";
+            this.label1.Text = "Itens no carrinho (apenas visualização)";
             // 
             // btn_LimparCarrinho
             // 
-            this.btn_LimparCarrinho.BackColor = System.Drawing.SystemColors.Info;
+            this.btn_LimparCarrinho.BackColor = System.Drawing.Color.Red;
             this.btn_LimparCarrinho.Location = new System.Drawing.Point(155, 340);
             this.btn_LimparCarrinho.Name = "btn_LimparCarrinho";
             this.btn_LimparCarrinho.Size = new System.Drawing.Size(105, 51);

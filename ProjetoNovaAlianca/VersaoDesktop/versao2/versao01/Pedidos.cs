@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace versao01
 {
@@ -34,7 +35,7 @@ namespace versao01
         public Pedidos()
         {
             InitializeComponent();
-
+            Ocultar();
             CarregarImpressoras();
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace versao01
             tb_Troco.Clear();
             caixa_de_texto_obs.Clear();
             caixa_de_texto_endereco.Clear();
+            carrinho1.Clear();
             tb_ItensNoCarrinho.Clear();
         }
         
@@ -280,6 +282,10 @@ namespace versao01
         {
             carrinho1.Clear();
             tb_ItensNoCarrinho.Clear();
+        }
+        private void Ocultar()
+        {
+            tb_ItensNoCarrinho.ReadOnly = true;
         }
     }
 }
