@@ -320,7 +320,7 @@ namespace versao01
             // 
             // tb_ItensNoCarrinho
             // 
-            this.tb_ItensNoCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tb_ItensNoCarrinho.BackColor = System.Drawing.Color.Silver;
             this.tb_ItensNoCarrinho.Location = new System.Drawing.Point(12, 750);
             this.tb_ItensNoCarrinho.Multiline = true;
             this.tb_ItensNoCarrinho.Name = "tb_ItensNoCarrinho";

@@ -17,20 +17,9 @@ namespace versao01
 {
     public partial class Pedidos : Form
     {
-        private PrintDocument printDocument = new PrintDocument();
-        public class Pedido
-        {
-            public string Quantidade { get; set; }
-            public string Tamanho { get; set; }
-            public string Carnes { get; set; }
-            public string Observacoes { get; set; }
-            public string Endereco { get; set; }
-            public string ValorTotal { get; set; }
-            public string FormaPagamento { get; set; }
-        }
-
-        List<Pedido> carrinho = new List<Pedido>();
-        List<string> carrinho1 = new List<string>();
+        private PrintDocument printDocument = new PrintDocument();       
+        List<string> carrinho = new List<string>();
+        List<string> carrinhoTemporario = new List<string>();
 
         public Pedidos()
         {
@@ -42,7 +31,15 @@ namespace versao01
         {
             Box_forma_de_pagamento.ItemCheck += checkedListBox1_ItemCheck;
         }
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            // Definir o texto e o formato de impressão
+            Font fonte = new Font("Arial", 10);
+            string texto = TextoImpressao().ToString();
 
+            // Desenhar o texto na página
+            e.Graphics.DrawString(texto, fonte, Brushes.Black, new PointF(10, 10));
+        }
         private void CarregarImpressoras()
         {
             impressora_combo_box.Items.Clear();
@@ -52,6 +49,7 @@ namespace versao01
             }
         }
 
+        //  Botôes do formulário
         private void button1_Click(object sender, EventArgs e)
         {
             // botão que Imprime
@@ -64,18 +62,76 @@ namespace versao01
             tb_Troco.Clear();
             caixa_de_texto_obs.Clear();
             caixa_de_texto_endereco.Clear();
-            carrinho1.Clear();
+            carrinho.Clear();
             tb_ItensNoCarrinho.Clear();
         }
-        
-        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        private void btn_AdicionarCarnes_Click(object sender, EventArgs e)
         {
-            // Definir o texto e o formato de impressão
-            Font fonte = new Font("Arial", 10);
-            string texto = TextoImpressao().ToString();
+            // Adiciona as carnes
+            if (tb_AdicionarCarne.Text != "")
+            {
+                checkedListBox1.Items.Add(tb_AdicionarCarne.Text);
+                tb_AdicionarCarne.Clear();
+                tb_AdicionarCarne.Focus();
+            }
+        }
 
-            // Desenhar o texto na página
-            e.Graphics.DrawString(texto, fonte, Brushes.Black, new PointF(10, 10));
+        private void btn_ApagarCarnes_Click(object sender, EventArgs e)
+        {
+            checkedListBox1.Items.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // reseta as configurações das carnes para o padrão
+            checkedListBox1.Items.Clear();
+            checkedListBox1.Items.Add("Boi");
+            checkedListBox1.Items.Add("Frango");
+            checkedListBox1.Items.Add("Porco");
+            checkedListBox1.Items.Add("Ovo");
+
+        }
+
+        private void btn_editarCarnes_Click(object sender, EventArgs e)
+        {
+            btn_ApagarCarnes.Visible = true;
+            btn_ResetarCarnes.Visible = true;
+            btn_AdicionarCarnes.Visible = true;
+            tb_AdicionarCarne.Visible = true;
+        }
+
+        private void btn_SalvarCarnes_Click(object sender, EventArgs e)
+        {
+            btn_ApagarCarnes.Visible = false;
+            btn_ResetarCarnes.Visible = false;
+            btn_AdicionarCarnes.Visible = false;
+            tb_AdicionarCarne.Visible = false;
+        }
+        private void btn_AddCarrinho_Click(object sender, EventArgs e)
+        {
+            carrinhoTemporario.Add(
+                TextoQuantidadeMarmitas() + " " +
+                TamanhoMarmita() +
+                "\n" + CarnesSelecionadas() + "\n" +
+                "Observacoes: " + TextoObservacoes() + "\n" + "\n"
+                );
+            carrinho.AddRange(carrinhoTemporario);
+            carrinhoTemporario.Clear();
+            DesmarcarItensBoxTamanhoMarmita();
+            DesmarcarItensBoxCarnes();
+            caixa_de_texto_valor_total.Clear();
+            DesmarcarItensBoxFormaPagamento();
+            tb_Troco.Clear();
+            caixa_de_texto_obs.Clear();
+            caixa_de_texto_endereco.Clear();
+            tb_ItensNoCarrinho.Clear();
+            tb_ItensNoCarrinho.Text += PedidoCliente();
+            tb_ItensNoCarrinho.Text += "\n";
+        }
+        private void btn_LimparCarrinho_Click(object sender, EventArgs e)
+        {
+            carrinho.Clear();
+            tb_ItensNoCarrinho.Clear();
         }
 
         private void DesmarcarItensBoxTamanhoMarmita()
@@ -105,7 +161,7 @@ namespace versao01
             string carnes = " ";
             foreach (var item in checkedListBox1.CheckedItems)
             {
-                // Retorna o primeiro item marcado (como estamos permitindo apenas um, este será o único)
+                // Retorna os itens marcados
                 carnes += item.ToString() + " ";
             }
             return carnes;
@@ -145,6 +201,20 @@ namespace versao01
                 PedidoCliente() +
                 TextoRodaPe();
         }
+        private string TextoObservacoes()
+        {
+            return caixa_de_texto_obs.Text;
+        }
+
+        private string TextoEndereco()
+        {
+            return caixa_de_texto_endereco.Text;
+        }
+
+        private string TextoValorTotal()
+        {
+            return caixa_de_texto_valor_total.Text;
+        }
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             // deixa selecionar apenas 1 opção de pagamento
@@ -162,74 +232,17 @@ namespace versao01
                 }
             }
         }
-        private string TextoObservacoes() 
-        {
-            return caixa_de_texto_obs.Text;
-        }
+        
 
-        private string TextoEndereco()
-        {
-            return caixa_de_texto_endereco.Text;
-        }
-
-        private string TextoValorTotal()
-        {
-            return caixa_de_texto_valor_total.Text;
-        }
-
-        private string QuantidadeMarmitas()
+        private string TextoQuantidadeMarmitas()
         {
             return quantidade_marmitas.Value.ToString();
         }
 
-        private string TextTroco()
+        private string TextoTroco()
         {
             return tb_Troco.Text;
-        }
-
-        private void btn_AdicionarCarnes_Click(object sender, EventArgs e)
-        {
-            // Adiciona as carnes
-            if (tb_AdicionarCarne.Text != "")
-            {
-                checkedListBox1.Items.Add(tb_AdicionarCarne.Text);
-                tb_AdicionarCarne.Clear();
-                tb_AdicionarCarne.Focus();
-            }
-        }
-
-        private void btn_ApagarCarnes_Click(object sender, EventArgs e)
-        {
-            checkedListBox1.Items.Clear();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // reseta as configurações das carnes para o padrão
-            checkedListBox1.Items.Clear();
-            checkedListBox1.Items.Add("Boi");
-            checkedListBox1.Items.Add("Frango");
-            checkedListBox1.Items.Add("Porco");
-            checkedListBox1.Items.Add("Ovo");
-        
-        }
-
-        private void btn_editarCarnes_Click(object sender, EventArgs e)
-        {
-            btn_ApagarCarnes.Visible = true;
-            btn_ResetarCarnes.Visible = true;
-            btn_AdicionarCarnes.Visible = true;
-            tb_AdicionarCarne.Visible = true;
-        }
-
-        private void btn_SalvarCarnes_Click(object sender, EventArgs e)
-        {
-            btn_ApagarCarnes.Visible = false;
-            btn_ResetarCarnes.Visible = false;
-            btn_AdicionarCarnes.Visible = false;
-            tb_AdicionarCarne.Visible = false;
-        }
-        
+        }        
         private string TextoCabecalho()
         {
             return "--------------------------------------\n" +
@@ -241,36 +254,17 @@ namespace versao01
             return "--------------------------------------\n" + "\n" +
                 "Valor total: " + TextoValorTotal() + "\n" +
                 "\nForma de pagamento: " + FormaDePagamento() + "\n" +
-                "Troco: " + TextTroco() + "\n" +
+                "Troco: " + TextoTroco() + "\n" +
                 "\nEndereco: " + TextoEndereco() + "\n" + "\n" +
                 "\n" + "\n" +
                 "--------------------------------------\n" +
                 "  Fim do pedido\n" +
                 "--------------------------------------\n";
         }
-        private void btn_AddCarrinho_Click(object sender, EventArgs e)
-        {
-            carrinho1.Add(
-                QuantidadeMarmitas() + " " +
-                TamanhoMarmita() +
-                "\nCarnes: " + CarnesSelecionadas() + "\n" +
-                "Observacoes: " + TextoObservacoes() + "\n" + "\n"
-                );
-            DesmarcarItensBoxTamanhoMarmita();
-            DesmarcarItensBoxCarnes();
-            caixa_de_texto_valor_total.Clear();
-            DesmarcarItensBoxFormaPagamento();
-            tb_Troco.Clear();
-            caixa_de_texto_obs.Clear();
-            caixa_de_texto_endereco.Clear();
-            tb_ItensNoCarrinho.Text += PedidoCliente();
-            tb_ItensNoCarrinho.Text += "\n";
-        }
-
         private string PedidoCliente()
         {
             string texto = "";
-            foreach (var item in carrinho1)
+            foreach (var item in carrinho)
             {
                 texto += item.ToString();
             }
@@ -278,14 +272,10 @@ namespace versao01
             return texto;
         }
 
-        private void btn_LimparCarrinho_Click(object sender, EventArgs e)
-        {
-            carrinho1.Clear();
-            tb_ItensNoCarrinho.Clear();
-        }
         private void Ocultar()
         {
             tb_ItensNoCarrinho.ReadOnly = true;
         }
+
     }
 }
