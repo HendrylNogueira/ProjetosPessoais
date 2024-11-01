@@ -10,6 +10,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -35,13 +36,24 @@ namespace versao01
         }
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
+            int startX = e.MarginBounds.Left;
+            int startY = e.MarginBounds.Top;
+            int width = e.MarginBounds.Width;
+
 
             // Definir o texto e o formato de impressão
             Font fonte = new Font("Arial", 10);
             string texto = TextoImpressao().ToString();
 
-            // Desenhar o texto na página
-            e.Graphics.DrawString(texto, fonte, Brushes.Black, new PointF(20, 10));
+            // Configura layout do parágrafo com quebra de linha
+            StringFormat stringFormat = new StringFormat();
+            stringFormat.Alignment = StringAlignment.Near;
+            stringFormat.FormatFlags = StringFormatFlags.LineLimit; // Ativa quebra de linha automática
+
+
+            // Desenha o texto com a quebra automática
+            e.Graphics.DrawString(texto, fonte, Brushes.Black, new RectangleF(startX, startY, width, e.MarginBounds.Height), stringFormat);
+
         }
         private void CarregarImpressoras()
         {
@@ -55,6 +67,17 @@ namespace versao01
         //  Botôes do formulário
         private void button1_Click(object sender, EventArgs e)
         {
+            // Para definir a orientação da pagina como retrato
+            printDocument1.DefaultPageSettings.Landscape = false;
+
+            // Para configurar as margens
+            printDocument1.DefaultPageSettings.Margins = new Margins(20,20,20,20);
+
+            // Para configurar o tamanho do papel a ser usado
+            PaperSize paperSize = new PaperSize("Custom", 315, 1012);
+            printDocument1.DefaultPageSettings.PaperSize = paperSize;
+            printDocument1.PrinterSettings.DefaultPageSettings.PaperSize = paperSize;
+
             // botão que Imprime
             printDocument1.PrinterSettings.PrinterName = impressora_combo_box.SelectedItem.ToString();
             printDocument1.Print();
