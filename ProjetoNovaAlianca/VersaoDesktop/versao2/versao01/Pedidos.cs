@@ -21,6 +21,8 @@ namespace versao01
         List<string> carrinho = new List<string>();
         List<string> carrinhoTemporario = new List<string>();
 
+
+
         public Pedidos()
         {
             InitializeComponent();
@@ -33,12 +35,13 @@ namespace versao01
         }
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
+
             // Definir o texto e o formato de impressão
             Font fonte = new Font("Arial", 10);
             string texto = TextoImpressao().ToString();
 
             // Desenhar o texto na página
-            e.Graphics.DrawString(texto, fonte, Brushes.Black, new PointF(10, 10));
+            e.Graphics.DrawString(texto, fonte, Brushes.Black, new PointF(20, 10));
         }
         private void CarregarImpressoras()
         {
@@ -158,11 +161,11 @@ namespace versao01
 
         private string CarnesSelecionadas() 
         {
-            string carnes = " ";
+            string carnes = "";
             foreach (var item in checkedListBox1.CheckedItems)
             {
                 // Retorna os itens marcados
-                carnes += item.ToString() + " ";
+                carnes += item.ToString() + " \n";
             }
             return carnes;
             
@@ -268,7 +271,7 @@ namespace versao01
             {
                 texto += item.ToString();
             }
-            texto += "\n";
+            texto += "\n" + "\n" + "\n";
             return texto;
         }
 
