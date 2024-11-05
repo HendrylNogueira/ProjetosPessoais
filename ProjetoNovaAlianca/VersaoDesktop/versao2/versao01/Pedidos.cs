@@ -90,6 +90,7 @@ namespace versao01
             caixa_de_texto_endereco.Clear();
             carrinho.Clear();
             tb_ItensNoCarrinho.Clear();
+            ZerarQuantidadeMarmita(); ;
         }
         private void btn_AdicionarCarnes_Click(object sender, EventArgs e)
         {
@@ -151,6 +152,7 @@ namespace versao01
             caixa_de_texto_obs.Clear();
             caixa_de_texto_endereco.Clear();
             tb_ItensNoCarrinho.Clear();
+            ZerarQuantidadeMarmita();
             tb_ItensNoCarrinho.Text += PedidoCliente();
             tb_ItensNoCarrinho.Text += "\n";
         }
@@ -303,5 +305,9 @@ namespace versao01
             tb_ItensNoCarrinho.ReadOnly = true;
         }
 
+        private void ZerarQuantidadeMarmita()
+        {
+            quantidade_marmitas.Value = 1;
+        }
     }
 }
