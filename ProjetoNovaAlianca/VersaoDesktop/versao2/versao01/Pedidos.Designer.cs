@@ -115,7 +115,7 @@ namespace versao01
             // 
             // caixa_de_texto_obs
             // 
-            this.caixa_de_texto_obs.Location = new System.Drawing.Point(23, 258);
+            this.caixa_de_texto_obs.Location = new System.Drawing.Point(22, 301);
             this.caixa_de_texto_obs.Multiline = true;
             this.caixa_de_texto_obs.Name = "caixa_de_texto_obs";
             this.caixa_de_texto_obs.Size = new System.Drawing.Size(238, 65);
@@ -124,7 +124,7 @@ namespace versao01
             // label_obs
             // 
             this.label_obs.AutoSize = true;
-            this.label_obs.Location = new System.Drawing.Point(21, 239);
+            this.label_obs.Location = new System.Drawing.Point(21, 282);
             this.label_obs.Name = "label_obs";
             this.label_obs.Size = new System.Drawing.Size(89, 16);
             this.label_obs.TabIndex = 13;
@@ -226,7 +226,7 @@ namespace versao01
             "Ovo"});
             this.checkedListBox1.Location = new System.Drawing.Point(24, 149);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(237, 85);
+            this.checkedListBox1.Size = new System.Drawing.Size(237, 119);
             this.checkedListBox1.TabIndex = 22;
             // 
             // tb_AdicionarCarne
@@ -310,11 +310,11 @@ namespace versao01
             // btn_AddCarrinho
             // 
             this.btn_AddCarrinho.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_AddCarrinho.Location = new System.Drawing.Point(22, 340);
+            this.btn_AddCarrinho.Location = new System.Drawing.Point(22, 372);
             this.btn_AddCarrinho.Name = "btn_AddCarrinho";
-            this.btn_AddCarrinho.Size = new System.Drawing.Size(127, 51);
+            this.btn_AddCarrinho.Size = new System.Drawing.Size(127, 34);
             this.btn_AddCarrinho.TabIndex = 32;
-            this.btn_AddCarrinho.Text = "Adicionar ao carrinho";
+            this.btn_AddCarrinho.Text = "Adicionar";
             this.btn_AddCarrinho.UseVisualStyleBackColor = false;
             this.btn_AddCarrinho.Click += new System.EventHandler(this.btn_AddCarrinho_Click);
             // 
@@ -340,11 +340,11 @@ namespace versao01
             // btn_LimparCarrinho
             // 
             this.btn_LimparCarrinho.BackColor = System.Drawing.Color.Red;
-            this.btn_LimparCarrinho.Location = new System.Drawing.Point(155, 340);
+            this.btn_LimparCarrinho.Location = new System.Drawing.Point(154, 372);
             this.btn_LimparCarrinho.Name = "btn_LimparCarrinho";
-            this.btn_LimparCarrinho.Size = new System.Drawing.Size(105, 51);
+            this.btn_LimparCarrinho.Size = new System.Drawing.Size(116, 34);
             this.btn_LimparCarrinho.TabIndex = 36;
-            this.btn_LimparCarrinho.Text = "Limpar Carrinho";
+            this.btn_LimparCarrinho.Text = "Limpar";
             this.btn_LimparCarrinho.UseVisualStyleBackColor = false;
             this.btn_LimparCarrinho.Click += new System.EventHandler(this.btn_LimparCarrinho_Click);
             // 

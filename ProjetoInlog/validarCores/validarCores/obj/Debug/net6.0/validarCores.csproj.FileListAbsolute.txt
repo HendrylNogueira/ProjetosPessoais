@@ -1,0 +1,14 @@
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\bin\Debug\net6.0\validarCores.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\bin\Debug\net6.0\validarCores.deps.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\bin\Debug\net6.0\validarCores.runtimeconfig.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\bin\Debug\net6.0\validarCores.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\bin\Debug\net6.0\validarCores.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\validarCores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\validarCores.AssemblyInfoInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\validarCores.AssemblyInfo.cs
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\validarCores.csproj.CoreCompileInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\validarCores.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\refint\validarCores.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\validarCores.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\validarCores.genruntimeconfig.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\validarCores\validarCores\obj\Debug\net6.0\ref\validarCores.dll
