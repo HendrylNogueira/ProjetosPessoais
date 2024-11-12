@@ -137,10 +137,11 @@ namespace versao01
         private void btn_AddCarrinho_Click(object sender, EventArgs e)
         {
             carrinhoTemporario.Add(
+                "------" + "\n" +
                 TextoQuantidadeMarmitas() + " " +
                 TamanhoMarmita() +
                 "\n" + CarnesSelecionadas() + "\n" +
-                "Observacoes: " + TextoObservacoes() + "\n" + "\n"
+                "Observacoes: " + TextoObservacoes() + "\n" + "\n" + "\n"
                 );
             carrinho.AddRange(carrinhoTemporario);
             carrinhoTemporario.Clear();
@@ -275,7 +276,8 @@ namespace versao01
         {
             return "--------------------------------------\n" +
                 "  Restaurante Nova Alianca\n" +
-                "--------------------------------------\n";
+                "--------------------------------------\n" +
+                "  |" + HorarioDoPedido() + "|  \n" + "\n";
         }
         private string TextoRodaPe()
         {
@@ -296,7 +298,7 @@ namespace versao01
             {
                 texto += item.ToString();
             }
-            texto += "\n" + "\n" + "\n";
+            texto += "\n";
             return texto;
         }
 
@@ -308,6 +310,12 @@ namespace versao01
         private void ZerarQuantidadeMarmita()
         {
             quantidade_marmitas.Value = 1;
+        }
+
+        private string HorarioDoPedido()
+        {
+            string hora = DateTime.Now.ToString();
+            return hora;
         }
     }
 }
