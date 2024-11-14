@@ -60,7 +60,15 @@ namespace versao01
             this.tb_ItensNoCarrinho = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_LimparCarrinho = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_alterarCarne = new System.Windows.Forms.TextBox();
+            this.btn_alterarCarne = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.quantidade_marmitas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // botao_imprimir
@@ -98,7 +106,7 @@ namespace versao01
             // label_selecione_carnes
             // 
             this.label_selecione_carnes.AutoSize = true;
-            this.label_selecione_carnes.Location = new System.Drawing.Point(19, 130);
+            this.label_selecione_carnes.Location = new System.Drawing.Point(28, 130);
             this.label_selecione_carnes.Name = "label_selecione_carnes";
             this.label_selecione_carnes.Size = new System.Drawing.Size(130, 16);
             this.label_selecione_carnes.TabIndex = 7;
@@ -171,7 +179,7 @@ namespace versao01
             "Pequena",
             "Media",
             "Grande"});
-            this.Box_tamanho_marmitas.Location = new System.Drawing.Point(22, 59);
+            this.Box_tamanho_marmitas.Location = new System.Drawing.Point(31, 59);
             this.Box_tamanho_marmitas.Name = "Box_tamanho_marmitas";
             this.Box_tamanho_marmitas.Size = new System.Drawing.Size(238, 68);
             this.Box_tamanho_marmitas.TabIndex = 16;
@@ -179,7 +187,7 @@ namespace versao01
             // label_tamanho_marmitas
             // 
             this.label_tamanho_marmitas.AutoSize = true;
-            this.label_tamanho_marmitas.Location = new System.Drawing.Point(19, 9);
+            this.label_tamanho_marmitas.Location = new System.Drawing.Point(28, 9);
             this.label_tamanho_marmitas.Name = "label_tamanho_marmitas";
             this.label_tamanho_marmitas.Size = new System.Drawing.Size(216, 16);
             this.label_tamanho_marmitas.TabIndex = 18;
@@ -187,7 +195,7 @@ namespace versao01
             // 
             // quantidade_marmitas
             // 
-            this.quantidade_marmitas.Location = new System.Drawing.Point(23, 31);
+            this.quantidade_marmitas.Location = new System.Drawing.Point(31, 31);
             this.quantidade_marmitas.Name = "quantidade_marmitas";
             this.quantidade_marmitas.Size = new System.Drawing.Size(62, 22);
             this.quantidade_marmitas.TabIndex = 19;
@@ -224,14 +232,14 @@ namespace versao01
             "Frango",
             "Porco",
             "Ovo"});
-            this.checkedListBox1.Location = new System.Drawing.Point(24, 149);
+            this.checkedListBox1.Location = new System.Drawing.Point(31, 149);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(237, 119);
             this.checkedListBox1.TabIndex = 22;
             // 
             // tb_AdicionarCarne
             // 
-            this.tb_AdicionarCarne.Location = new System.Drawing.Point(305, 183);
+            this.tb_AdicionarCarne.Location = new System.Drawing.Point(305, 83);
             this.tb_AdicionarCarne.Name = "tb_AdicionarCarne";
             this.tb_AdicionarCarne.Size = new System.Drawing.Size(160, 22);
             this.tb_AdicionarCarne.TabIndex = 24;
@@ -239,7 +247,7 @@ namespace versao01
             // 
             // btn_AdicionarCarnes
             // 
-            this.btn_AdicionarCarnes.Location = new System.Drawing.Point(471, 179);
+            this.btn_AdicionarCarnes.Location = new System.Drawing.Point(471, 79);
             this.btn_AdicionarCarnes.Name = "btn_AdicionarCarnes";
             this.btn_AdicionarCarnes.Size = new System.Drawing.Size(86, 30);
             this.btn_AdicionarCarnes.TabIndex = 25;
@@ -250,7 +258,7 @@ namespace versao01
             // 
             // btn_ApagarCarnes
             // 
-            this.btn_ApagarCarnes.Location = new System.Drawing.Point(305, 130);
+            this.btn_ApagarCarnes.Location = new System.Drawing.Point(305, 23);
             this.btn_ApagarCarnes.Name = "btn_ApagarCarnes";
             this.btn_ApagarCarnes.Size = new System.Drawing.Size(123, 30);
             this.btn_ApagarCarnes.TabIndex = 26;
@@ -261,7 +269,7 @@ namespace versao01
             // 
             // btn_ResetarCarnes
             // 
-            this.btn_ResetarCarnes.Location = new System.Drawing.Point(434, 130);
+            this.btn_ResetarCarnes.Location = new System.Drawing.Point(434, 23);
             this.btn_ResetarCarnes.Name = "btn_ResetarCarnes";
             this.btn_ResetarCarnes.Size = new System.Drawing.Size(123, 30);
             this.btn_ResetarCarnes.TabIndex = 27;
@@ -348,11 +356,81 @@ namespace versao01
             this.btn_LimparCarrinho.UseVisualStyleBackColor = false;
             this.btn_LimparCarrinho.Click += new System.EventHandler(this.btn_LimparCarrinho_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 149);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 16);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "0 -";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(305, 143);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(103, 22);
+            this.numericUpDown1.TabIndex = 38;
+            this.numericUpDown1.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 171);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 16);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "1 -";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 187);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(21, 16);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "2 -";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 203);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 16);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "3 -";
+            // 
+            // tb_alterarCarne
+            // 
+            this.tb_alterarCarne.Location = new System.Drawing.Point(305, 181);
+            this.tb_alterarCarne.Name = "tb_alterarCarne";
+            this.tb_alterarCarne.Size = new System.Drawing.Size(160, 22);
+            this.tb_alterarCarne.TabIndex = 42;
+            this.tb_alterarCarne.Visible = false;
+            // 
+            // btn_alterarCarne
+            // 
+            this.btn_alterarCarne.Location = new System.Drawing.Point(471, 177);
+            this.btn_alterarCarne.Name = "btn_alterarCarne";
+            this.btn_alterarCarne.Size = new System.Drawing.Size(86, 30);
+            this.btn_alterarCarne.TabIndex = 43;
+            this.btn_alterarCarne.Text = "Alterar";
+            this.btn_alterarCarne.UseVisualStyleBackColor = true;
+            this.btn_alterarCarne.Visible = false;
+            this.btn_alterarCarne.Click += new System.EventHandler(this.btn_alterarCarne_Click);
+            // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 1055);
+            this.Controls.Add(this.btn_alterarCarne);
+            this.Controls.Add(this.tb_alterarCarne);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_LimparCarrinho);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_ItensNoCarrinho);
@@ -383,9 +461,10 @@ namespace versao01
             this.Controls.Add(this.botao_imprimir);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pedidos";
-            this.Text = "Restaurante Nova Alianca -- Versão 2.0";
+            this.Text = "Restaurante Nova Alianca -- Versão 2.0.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.quantidade_marmitas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,6 +502,13 @@ namespace versao01
         private TextBox tb_ItensNoCarrinho;
         private Label label1;
         private Button btn_LimparCarrinho;
+        private Label label2;
+        private NumericUpDown numericUpDown1;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private TextBox tb_alterarCarne;
+        private Button btn_alterarCarne;
     }
 }
 

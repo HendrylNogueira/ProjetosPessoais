@@ -103,6 +103,13 @@ namespace versao01
             }
         }
 
+        private void btn_alterarCarne_Click(object sender, EventArgs e)
+        {
+            EditarCarne();
+            tb_alterarCarne.Clear();
+            tb_alterarCarne.Focus();
+        }
+
         private void btn_ApagarCarnes_Click(object sender, EventArgs e)
         {
             checkedListBox1.Items.Clear();
@@ -116,6 +123,7 @@ namespace versao01
             checkedListBox1.Items.Add("Frango");
             checkedListBox1.Items.Add("Porco");
             checkedListBox1.Items.Add("Ovo");
+            checkedListBox1.Items.Add("Bebidas");
 
         }
 
@@ -125,6 +133,9 @@ namespace versao01
             btn_ResetarCarnes.Visible = true;
             btn_AdicionarCarnes.Visible = true;
             tb_AdicionarCarne.Visible = true;
+            btn_alterarCarne.Visible = true;
+            tb_alterarCarne.Visible = true;
+            numericUpDown1.Visible = true;
         }
 
         private void btn_SalvarCarnes_Click(object sender, EventArgs e)
@@ -133,6 +144,9 @@ namespace versao01
             btn_ResetarCarnes.Visible = false;
             btn_AdicionarCarnes.Visible = false;
             tb_AdicionarCarne.Visible = false;
+            btn_alterarCarne.Visible = false;
+            tb_alterarCarne.Visible = false;
+            numericUpDown1.Visible = false;
         }
         private void btn_AddCarrinho_Click(object sender, EventArgs e)
         {
@@ -314,5 +328,16 @@ namespace versao01
             string hora = DateTime.Now.ToString();
             return hora;
         }
+        private void EditarCarne() 
+        {
+            int num = 0;
+            num = (int)numericUpDown1.Value;
+            checkedListBox1.Items[num] = tb_alterarCarne.Text;
+
+        }
+
+        
     }
 }
+
+// numericUpDown1/tb_AdicionarCarne
