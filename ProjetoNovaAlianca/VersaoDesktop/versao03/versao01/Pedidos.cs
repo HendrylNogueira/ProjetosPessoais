@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NovaAlianca;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,13 @@ using System.Drawing.Printing;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Security;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.AxHost;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace versao01
@@ -21,13 +24,27 @@ namespace versao01
         private PrintDocument printDocument = new PrintDocument();       
         List<string> carrinho = new List<string>();
         List<string> carrinhoTemporario = new List<string>();
-        private int numPedido = 1;
+
+        
 
         public Pedidos()
         {
             InitializeComponent();
-            Ocultar();
             CarregarImpressoras();
+
+
+            printPreviewControl1.Document = printDocument1;
+            printDocument1.PrintPage += printDocument1_PrintPage;
+
+
+            // Para configurar as margens
+            printDocument1.DefaultPageSettings.Margins = new Margins(20, 20, 20, 20);
+
+            // Para configurar o tamanho do papel a ser usado
+            PaperSize paperSize = new PaperSize("Custom", 315, 1012);
+            printDocument1.DefaultPageSettings.PaperSize = paperSize;
+            printDocument1.PrinterSettings.DefaultPageSettings.PaperSize = paperSize;
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -88,9 +105,7 @@ namespace versao01
             caixa_de_texto_obs.Clear();
             caixa_de_texto_endereco.Clear();
             carrinho.Clear();
-            tb_ItensNoCarrinho.Clear();
-            ZerarQuantidadeMarmita();
-            numPedido += 1;
+            ZerarQuantidadeMarmita(); ;
         }
         private void btn_AdicionarCarnes_Click(object sender, EventArgs e)
         {
@@ -147,16 +162,14 @@ namespace versao01
             carrinhoTemporario.Clear();
             DesmarcarItensBoxTamanhoMarmita();
             DesmarcarItensBoxCarnes();
-            ZerarQuantidadeMarmita();
             caixa_de_texto_obs.Clear();
-            tb_ItensNoCarrinho.Clear();
-            tb_ItensNoCarrinho.Text += PedidoCliente();
-            tb_ItensNoCarrinho.Text += "\n";
+            ZerarQuantidadeMarmita();
+            printPreviewControl1.InvalidatePreview();
         }
         private void btn_LimparCarrinho_Click(object sender, EventArgs e)
         {
             carrinho.Clear();
-            tb_ItensNoCarrinho.Clear();
+            printPreviewControl1.InvalidatePreview();
         }
 
         private void DesmarcarItensBoxTamanhoMarmita()
@@ -273,8 +286,7 @@ namespace versao01
             return "--------------------------------------\n" +
                 "  Restaurante Nova Alianca\n" +
                 "--------------------------------------\n" +
-                "  |" + HorarioDoPedido() + "|  \n" +
-                "  |Pedido: " + numPedido + "|  \n" + "\n";
+                "  |" + HorarioDoPedido() + "|  \n" + "\n";
         }
         private string TextoRodaPe()
         {
@@ -299,11 +311,6 @@ namespace versao01
             return texto;
         }
 
-        private void Ocultar()
-        {
-            tb_ItensNoCarrinho.ReadOnly = true;
-        }
-
         private void ZerarQuantidadeMarmita()
         {
             quantidade_marmitas.Value = 1;
@@ -313,6 +320,28 @@ namespace versao01
         {
             string hora = DateTime.Now.ToString();
             return hora;
+        }
+        
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            // Criando e exibindo um novo formulário
+
+            Bebidas bebidas = new Bebidas();
+            bebidas.Show(); // Exibe o formulário de maneira não modal
+        }
+
+        private void printPreviewControl1_Click(object sender, EventArgs e)
+        {
+            // Configura layout do parágrafo com quebra de linha
+            StringFormat stringFormat = new StringFormat();
+            stringFormat.Alignment = StringAlignment.Near;
+            stringFormat.FormatFlags = StringFormatFlags.LineLimit; // Ativa quebra de linha automática
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
         }
     }
 }
