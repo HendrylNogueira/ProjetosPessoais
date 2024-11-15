@@ -170,7 +170,7 @@ namespace versao01
             // 
             // Box_tamanho_marmitas
             // 
-            this.Box_tamanho_marmitas.BackColor = System.Drawing.SystemColors.Control;
+            this.Box_tamanho_marmitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Box_tamanho_marmitas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Box_tamanho_marmitas.CheckOnClick = true;
             this.Box_tamanho_marmitas.FormattingEnabled = true;
@@ -223,7 +223,7 @@ namespace versao01
             // 
             // checkedListBox1
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.FormattingEnabled = true;
@@ -318,7 +318,7 @@ namespace versao01
             // 
             // btn_AddCarrinho
             // 
-            this.btn_AddCarrinho.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_AddCarrinho.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btn_AddCarrinho.Location = new System.Drawing.Point(500, 184);
             this.btn_AddCarrinho.Name = "btn_AddCarrinho";
             this.btn_AddCarrinho.Size = new System.Drawing.Size(127, 34);
@@ -329,7 +329,7 @@ namespace versao01
             // 
             // btn_LimparCarrinho
             // 
-            this.btn_LimparCarrinho.BackColor = System.Drawing.Color.Red;
+            this.btn_LimparCarrinho.BackColor = System.Drawing.Color.IndianRed;
             this.btn_LimparCarrinho.Location = new System.Drawing.Point(500, 236);
             this.btn_LimparCarrinho.Name = "btn_LimparCarrinho";
             this.btn_LimparCarrinho.Size = new System.Drawing.Size(127, 34);
@@ -340,7 +340,7 @@ namespace versao01
             // 
             // checkedListBox2
             // 
-            this.checkedListBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.checkedListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox2.CheckOnClick = true;
             this.checkedListBox2.FormattingEnabled = true;
@@ -412,7 +412,7 @@ namespace versao01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1378, 997);
             this.Controls.Add(this.panel1);
