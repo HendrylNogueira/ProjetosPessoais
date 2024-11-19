@@ -1,0 +1,37 @@
+2024-11-18 23:11:32.875 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+System.ArgumentException: Requested value 'dbouheguhs' was not found.
+   at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at ProjectInlog.ConsoleApp.Program.Main(String[] args) in C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\ConsoleApp\Program.cs:line 74
+2024-11-18 23:13:00.548 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+System.ArgumentException: Requested value 'uivb\sub' was not found.
+   at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at ProjectInlog.ConsoleApp.Program.Main(String[] args) in C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\ConsoleApp\Program.cs:line 74
+2024-11-18 23:15:32.146 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+System.ArgumentException: Requested value 'druv' was not found.
+   at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at ProjectInlog.ConsoleApp.Program.Main(String[] args) in C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\ConsoleApp\Program.cs:line 74
+2024-11-18 23:17:04.476 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+System.ArgumentException: Requested value 'Aviao' was not found.
+   at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at ProjectInlog.ConsoleApp.Program.Main(String[] args) in C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\ConsoleApp\Program.cs:line 74
+2024-11-18 23:22:45.663 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+2024-11-18 23:22:45.697 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+System.ArgumentException: O chassi deve ter exatamente 5 caracteres.
+   at ProjectInlog.Core.Services.VeiculoService.ValidarVeiculo(Veiculo veiculo) in C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\Core\Services\VeiculoService.cs:line 20
+   at ProjectInlog.ConsoleApp.Program.Main(String[] args) in C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\ConsoleApp\Program.cs:line 81
+2024-11-18 23:23:26.312 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+2024-11-18 23:25:17.627 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+2024-11-18 23:26:42.246 -03:00 [ERR] Veículo nao encontrado.
+2024-11-18 23:27:03.018 -03:00 [ERR] Opcao invalida.

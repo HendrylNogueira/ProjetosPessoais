@@ -30,3 +30,7 @@ C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\Pr
 C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\bin\Debug\net6.0\Serilog.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlog\ProjectInlog\bin\Debug\net6.0\Serilog.Sinks.File.dll

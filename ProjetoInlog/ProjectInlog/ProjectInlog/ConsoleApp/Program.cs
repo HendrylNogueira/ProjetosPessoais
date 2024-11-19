@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ProjectInlog.Infrastructure.Repositories;
 using ProjectInlog.Core.Services;
 using ProjectInlog.Core.Entities.Enum;
+using Serilog;
 
 namespace ProjectInlog.ConsoleApp
 {
@@ -14,6 +15,15 @@ namespace ProjectInlog.ConsoleApp
 
         static void Main(string[] args)
         {
+            
+            // Exemplo de configuração básica
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug() // Define o nível mínimo dos logs (Debug, Information, Warning, Error, etc.)
+                //  .WriteTo.Console() // Grava no console
+                .WriteTo.File("logs.txt", rollingInterval: RollingInterval.Day) // Grava em arquivo
+                .CreateLogger();
+
+
             // Configuração do DbContext para o MySQL usando a string de conexão
             var services = new ServiceCollection();
 
@@ -74,6 +84,7 @@ namespace ProjectInlog.ConsoleApp
                         }
                         catch (ArgumentException ex)
                         {
+                            Log.Error(ex, "Ocorreu um erro no sistema de gerenciamento de frota.");
                             Console.WriteLine($"Erro de validação: {ex.Message}");
                         }
                         
@@ -104,12 +115,15 @@ namespace ProjectInlog.ConsoleApp
                         Console.Write("Digite a nova Cor: ");
                         var cor = Console.ReadLine();
                         veiculoObtido.AtualizarCor(cor);
+                        veiculoRepository.AtualizarVeiculo(veiculoObtido);
 
                         //  VeiculoRepository.AtualizarVeiculo();
                         Console.WriteLine("Veículo atualizado com sucesso!");
                     }
                     else
-                    { Console.WriteLine("Veículo não encontrado!"); continue; }
+                    {
+                        Log.Error("Veículo nao encontrado.");
+                        Console.WriteLine("Veículo não encontrado!"); continue; }
 
                 }
                 else if (opcao == "4")
@@ -125,7 +139,9 @@ namespace ProjectInlog.ConsoleApp
                         Console.WriteLine("Veículo deletado com sucesso!");
                     }
                     else
-                    { Console.WriteLine("Veículo não encontrado!"); continue; }
+                    {
+                        Log.Error("Veículo nao encontrado.");
+                        Console.WriteLine("Veículo não encontrado!"); continue; }
                 }
 
                 else if (opcao == "5")
@@ -142,6 +158,7 @@ namespace ProjectInlog.ConsoleApp
                 }
                 else
                 {
+                    Log.Error("Opcao invalida.");
                     Console.WriteLine("Opção inválida!");
                 }
 
