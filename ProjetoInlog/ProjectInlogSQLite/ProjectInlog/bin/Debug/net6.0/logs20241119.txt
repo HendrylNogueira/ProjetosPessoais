@@ -1,0 +1,1 @@
+2024-11-19 02:30:20.552 -03:00 [ERR] Veículo nao encontrado.
