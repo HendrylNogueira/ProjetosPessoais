@@ -16,24 +16,16 @@ namespace ProjectInlog.ConsoleApp
         static void Main(string[] args)
         {
             
-            // Exemplo de configuração básica
+            // Configura a gravação de logs
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug() // Define o nível mínimo dos logs (Debug, Information, Warning, Error, etc.)
-                //  .WriteTo.Console() // Grava no console
+                
                 .WriteTo.File("logs.txt", rollingInterval: RollingInterval.Day) // Grava em arquivo
                 .CreateLogger();
-
-
-            // Configuração do DbContext para o MySQL usando a string de conexão
+            
+            // Define o caminho do banco para salvar os dados no SQLite
             var services = new ServiceCollection();
-            /*
-            services.AddDbContext<ApplicationDbContext>(options =>
-                    options.UseMySql(
-                        "Server=localhost;Database=GerenciamentoFrota;User=root;Password=xnm*2508;", // Sua string de conexão
-                        ServerVersion.AutoDetect("Server=localhost;Database=GerenciamentoFrota;User=root;Password=xnm*2508;")
-                    )
-                )
-                .BuildServiceProvider();  */
+                        
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string projectPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\"); // Volta três níveis para sair do bin/debug/netX.X
             string dbPath = Path.Combine(projectPath, "meubanco.db");
@@ -50,8 +42,6 @@ namespace ProjectInlog.ConsoleApp
             VeiculoService veiculoService = new VeiculoService();
 
             
-
-
             // Interação com o usuário
             while (true)
             {
@@ -67,7 +57,7 @@ namespace ProjectInlog.ConsoleApp
                 if (opcao == "1")
                 {
                     // Adicionar Veículo
-                    Console.Write("Digite o Chassi: ");
+                    Console.Write("Digite o Chassi (Deve conter 5 caracterees): ");
                     var chassi = Console.ReadLine();
                     var veiculoObtido = veiculoRepository.ObterVeiculoPorChassi(chassi);
                     if (veiculoObtido == null)

@@ -1,0 +1,5 @@
+2024-12-04 11:11:59.098 -03:00 [ERR] Ocorreu um erro no sistema de gerenciamento de frota.
+System.ArgumentException: Must specify valid information for parsing in the string. (Parameter 'value')
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at ProjectInlog.ConsoleApp.Program.Main(String[] args) in C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoInlog\ProjectInlogSQLite\ProjectInlog\ConsoleApp\Program.cs:line 71
