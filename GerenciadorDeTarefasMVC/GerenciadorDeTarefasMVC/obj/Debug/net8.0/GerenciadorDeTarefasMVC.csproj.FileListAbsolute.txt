@@ -1,0 +1,15 @@
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\bin\Debug\net8.0\GerenciadorDeTarefasMVC.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\bin\Debug\net8.0\GerenciadorDeTarefasMVC.deps.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\bin\Debug\net8.0\GerenciadorDeTarefasMVC.runtimeconfig.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\bin\Debug\net8.0\GerenciadorDeTarefasMVC.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\bin\Debug\net8.0\GerenciadorDeTarefasMVC.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\GerenciadorDeTarefasMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\GerenciadorDeTarefasMVC.AssemblyInfoInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\GerenciadorDeTarefasMVC.AssemblyInfo.cs
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\GerenciadorDeTarefasMVC.csproj.CoreCompileInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\GerenciadorDeTarefasMVC.sourcelink.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\GerenciadorDeTarefasMVC.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\refint\GerenciadorDeTarefasMVC.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\GerenciadorDeTarefasMVC.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\GerenciadorDeTarefasMVC.genruntimeconfig.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\GerenciadorDeTarefasMVC\GerenciadorDeTarefasMVC\obj\Debug\net8.0\ref\GerenciadorDeTarefasMVC.dll

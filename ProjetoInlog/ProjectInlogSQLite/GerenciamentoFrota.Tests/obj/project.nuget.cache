@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "e9u0XMNkkctrn7LOgJfVfs2DxXe4Z/SfzVqd6K06aO80fuusnJR4DXc43FPHbNbaEtOGICukwq7bUZTePjQGew==",
+  "dgSpecHash": "ZYMSi5sLVAU=",
   "success": true,
   "projectFilePath": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoInlog\\ProjectInlogSQLite\\GerenciamentoFrota.Tests\\GerenciamentoFrota.Tests.csproj",
   "expectedPackageFiles": [
@@ -127,7 +127,10 @@
     "C:\\Users\\hendr\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\hendr\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\hendr\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\hendr\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    "C:\\Users\\hendr\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+    "C:\\Users\\hendr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\hendr\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\hendr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

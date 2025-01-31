@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB749E7-83BB-455C-B6A5-5AA4078A7933}|AprendendoMVC\\AprendendoMVC.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendomvc\\aprendendomvc\\view\\veiculoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB749E7-83BB-455C-B6A5-5AA4078A7933}|AprendendoMVC\\AprendendoMVC.csproj|solutionrelative:aprendendomvc\\view\\veiculoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 321,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VeiculoView.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoMVC\\AprendendoMVC\\View\\VeiculoView.cs",
+              "RelativeDocumentMoniker": "AprendendoMVC\\View\\VeiculoView.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoMVC\\AprendendoMVC\\View\\VeiculoView.cs",
+              "RelativeToolTip": "AprendendoMVC\\View\\VeiculoView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:26:19.87Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

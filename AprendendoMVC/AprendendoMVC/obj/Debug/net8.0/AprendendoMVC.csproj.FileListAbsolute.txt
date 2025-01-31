@@ -1,0 +1,15 @@
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\bin\Debug\net8.0\AprendendoMVC.exe
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\bin\Debug\net8.0\AprendendoMVC.deps.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\bin\Debug\net8.0\AprendendoMVC.runtimeconfig.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\bin\Debug\net8.0\AprendendoMVC.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\bin\Debug\net8.0\AprendendoMVC.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\AprendendoMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\AprendendoMVC.AssemblyInfoInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\AprendendoMVC.AssemblyInfo.cs
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\AprendendoMVC.csproj.CoreCompileInputs.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\AprendendoMVC.sourcelink.json
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\AprendendoMVC.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\refint\AprendendoMVC.dll
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\AprendendoMVC.pdb
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\AprendendoMVC.genruntimeconfig.cache
+C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\AprendendoMVC\AprendendoMVC\obj\Debug\net8.0\ref\AprendendoMVC.dll

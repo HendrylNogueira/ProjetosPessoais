@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g39IVnSz6taiEvLgYP2JdUJlGkwDzbprxXF71U+oFzrwmY/hWYO3hnMWUiG8loouRCcYSIsnlhy0t+84p0198A==",
+  "dgSpecHash": "WqiN2PeS868=",
   "success": true,
   "projectFilePath": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoInlog\\ProjectInlogSQLite\\ProjectInlog\\ProjectInlog.csproj",
   "expectedPackageFiles": [
@@ -40,7 +40,11 @@
     "C:\\Users\\hendr\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\hendr\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\hendr\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\hendr\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+    "C:\\Users\\hendr\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\hendr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\hendr\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\hendr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\hendr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

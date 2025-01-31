@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciamentoFrota.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+667a982ccedb4f2dda59a0a57aa86acfcb560908")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciamentoFrota.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciamentoFrota.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
