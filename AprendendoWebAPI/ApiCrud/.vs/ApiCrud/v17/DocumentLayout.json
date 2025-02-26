@@ -15,24 +15,24 @@
       "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:estudantes\\addestudanterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\estudantes\\updateestudanterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:estudantes\\updateestudanterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\migrations\\appdbconstextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:migrations\\appdbconstextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\estudantes\\updateestudanterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:estudantes\\updateestudanterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{993E5B5C-8B18-4E88-893C-5AE3194B9C72}|ApiCrud.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\aprendendowebapi\\apicrud\\apicrud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,42 +58,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateEstudanteRequest.cs",
-              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\UpdateEstudanteRequest.cs",
-              "RelativeDocumentMoniker": "Estudantes\\UpdateEstudanteRequest.cs",
-              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\UpdateEstudanteRequest.cs",
-              "RelativeToolTip": "Estudantes\\UpdateEstudanteRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Estudante.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\Estudante.cs",
+              "RelativeDocumentMoniker": "Estudantes\\Estudante.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\Estudante.cs",
+              "RelativeToolTip": "Estudantes\\Estudante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T01:02:42.804Z",
+              "WhenOpened": "2025-02-06T01:35:07.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T01:41:29.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T01:41:29.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EstudantesRotas.cs",
-              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\EstudantesRotas.cs",
-              "RelativeDocumentMoniker": "Estudantes\\EstudantesRotas.cs",
-              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\EstudantesRotas.cs",
-              "RelativeToolTip": "Estudantes\\EstudantesRotas.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwB0AAAAkAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T01:29:18.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T01:29:53.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbConstextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Migrations\\AppDbConstextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\AppDbConstextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Migrations\\AppDbConstextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\AppDbConstextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T02:42:58.171Z"
             },
             {
               "$type": "Document",
@@ -110,20 +120,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Estudante.cs",
-              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\Estudante.cs",
-              "RelativeDocumentMoniker": "Estudantes\\Estudante.cs",
-              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\Estudante.cs",
-              "RelativeToolTip": "Estudantes\\Estudante.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EstudantesRotas.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\EstudantesRotas.cs",
+              "RelativeDocumentMoniker": "Estudantes\\EstudantesRotas.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\EstudantesRotas.cs",
+              "RelativeToolTip": "Estudantes\\EstudantesRotas.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T01:35:07.805Z",
+              "WhenOpened": "2025-02-06T01:29:18.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "UpdateEstudanteRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\UpdateEstudanteRequest.cs",
+              "RelativeDocumentMoniker": "Estudantes\\UpdateEstudanteRequest.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Estudantes\\UpdateEstudanteRequest.cs",
+              "RelativeToolTip": "Estudantes\\UpdateEstudanteRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T01:02:42.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -131,32 +153,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-11T23:52:02.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T01:29:53.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppDbConstextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Migrations\\AppDbConstextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\AppDbConstextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\AprendendoWebAPI\\ApiCrud\\Migrations\\AppDbConstextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\AppDbConstextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T02:42:58.171Z"
+              "WhenOpened": "2025-02-11T23:52:02.176Z"
             },
             {
               "$type": "Document",
