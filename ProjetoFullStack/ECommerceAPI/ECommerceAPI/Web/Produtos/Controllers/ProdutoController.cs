@@ -1,8 +1,8 @@
-﻿using ECommerceAPI.Application.Interfaces;
-using ECommerceAPI.Domain.Entities;
+﻿using ECommerceAPI.Application.Produtos.Interfaces;
+using ECommerceAPI.Domain.Produtos.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ECommerceAPI.Web.Controllers
+namespace ECommerceAPI.Web.Produtos.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -44,7 +44,7 @@ namespace ECommerceAPI.Web.Controllers
         public async Task<IActionResult> AtualizarNomeProduto(int id, [FromBody] AtualizarProdutoDto dto)
         {
 
-            if (dto == null || (string.IsNullOrWhiteSpace(dto.Nome) && string.IsNullOrWhiteSpace(dto.Descricao)))
+            if (dto == null || string.IsNullOrWhiteSpace(dto.Nome) && string.IsNullOrWhiteSpace(dto.Descricao))
             {
                 return BadRequest("Nome e/ou descrição não podem estar vazios.");
             }

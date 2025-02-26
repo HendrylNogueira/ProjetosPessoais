@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "ECommerceAPI.Web.Controllers.ProdutoController",
+    "ContainingType": "ECommerceAPI.Web.Produtos.Controllers.ProdutoController",
     "Method": "GetProdutos",
     "RelativePath": "api/Produto",
     "HttpMethod": "GET",
@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ECommerceAPI.Domain.Entities.Produto, ECommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ECommerceAPI.Domain.Produtos.Entities.Produto, ECommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "ContainingType": "ECommerceAPI.Web.Controllers.ProdutoController",
+    "ContainingType": "ECommerceAPI.Web.Produtos.Controllers.ProdutoController",
     "Method": "CreateProduto",
     "RelativePath": "api/Produto",
     "HttpMethod": "POST",
@@ -29,14 +29,14 @@
     "Parameters": [
       {
         "Name": "produto",
-        "Type": "ECommerceAPI.Domain.Entities.Produto",
+        "Type": "ECommerceAPI.Domain.Produtos.Entities.Produto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ECommerceAPI.Web.Controllers.ProdutoController",
+    "ContainingType": "ECommerceAPI.Web.Produtos.Controllers.ProdutoController",
     "Method": "GetProduto",
     "RelativePath": "api/Produto/{id}",
     "HttpMethod": "GET",
@@ -51,7 +51,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "ECommerceAPI.Domain.Entities.Produto",
+        "Type": "ECommerceAPI.Domain.Produtos.Entities.Produto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -62,7 +62,7 @@
     ]
   },
   {
-    "ContainingType": "ECommerceAPI.Web.Controllers.ProdutoController",
+    "ContainingType": "ECommerceAPI.Web.Produtos.Controllers.ProdutoController",
     "Method": "AtualizarNomeProduto",
     "RelativePath": "api/Produto/{id}",
     "HttpMethod": "PUT",
@@ -76,14 +76,14 @@
       },
       {
         "Name": "dto",
-        "Type": "ECommerceAPI.Domain.Entities.AtualizarProdutoDto",
+        "Type": "ECommerceAPI.Domain.Produtos.Entities.AtualizarProdutoDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ECommerceAPI.Web.Controllers.ProdutoController",
+    "ContainingType": "ECommerceAPI.Web.Produtos.Controllers.ProdutoController",
     "Method": "DeleteProduto",
     "RelativePath": "api/Produto/{id}",
     "HttpMethod": "DELETE",

@@ -1,7 +1,7 @@
-using ECommerceAPI.Infrastructure.Data;
-using ECommerceAPI.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
-using ECommerceAPI.Application.Interfaces;
+using ECommerceAPI.Application.Produtos.Interfaces;
+using ECommerceAPI.Infrastructure.Produtos.Data;
+using ECommerceAPI.Infrastructure.Produtos.Data.Repositories;
 
 namespace ECommerceAPI
 {
