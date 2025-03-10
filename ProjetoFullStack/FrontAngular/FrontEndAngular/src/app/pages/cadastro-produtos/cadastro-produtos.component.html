@@ -1,0 +1,132 @@
+
+<div class="container">
+
+    <!-- Cadastra um novo produto -->
+  
+    <div class="container-cadastro">
+      <h2>Cadastrar Novo Produto</h2>
+  
+      <form>
+  
+        <label for="id">Id:</label>
+        <input type="number" id="id" placeholder="Digite o código do produto" [(ngModel)]="IdAdicionar" [ngModelOptions]="{standalone: true}">
+  
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite o nome do produto"  [(ngModel)]="nomeAdicionar" [ngModelOptions]="{standalone: true}">
+  
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" placeholder="Digite a descrição" [(ngModel)]="descricaoAdicionar" [ngModelOptions]="{standalone: true}"></textarea>
+  
+        <label for="preco">Preço:</label>
+        <input type="number" [(ngModel)]="precoAdicionar" [ngModelOptions]="{standalone: true}">
+  
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" [(ngModel)]="categoriaAdicionar" [ngModelOptions]="{standalone: true}">
+          <option value="eletronico">Eletrônico</option>
+          <option value="roupa">Roupa</option>
+          <option value="alimento">Alimento</option>
+        </select>
+  
+      </form>
+      <button (click)="CadastrarProduto()">Cadastrar</button>
+  
+    </div>
+  
+  
+    <!-- Atualiza o produto com base no ID acima -->
+  
+  
+    <div class="container-atualizar">
+  
+      <h2>Atualizar Cadastro do Produto</h2>
+  
+      <div>
+        <input type="search" [(ngModel)]="valorBuscaProduto"
+        (keyup.enter)="obterProdutoEspecifico()" placeholder="Digite o ID do produto">
+      </div>
+  
+      <ul class="lista-produtos">
+        <li>
+          <span class="nome-produto">Id: {{ (produtoEncontrada$ | async)?.id}}</span>
+          <span class="nome-produto">Nome: {{ (produtoEncontrada$ | async)?.nome}}</span>
+          <span class="preco-produto"> R$ {{ (produtoEncontrada$ | async )?.preco}}</span>
+        </li>
+      </ul>
+  
+      <h2>Digite os novos dados do produto:</h2>
+  
+      <form>
+        <label for="nome">Novo correto:</label>
+        <input type="text" id="nome" placeholder="Digite o nome do produto"  [(ngModel)]="nomeAtualizar" [ngModelOptions]="{standalone: true}">
+        
+        <label for="descricao">Descrição:</label>
+        <textarea placeholder="Digite a descrição" [(ngModel)]="descricaoAtualizar" [ngModelOptions]="{standalone: true}"></textarea>
+        <label for="preco">Preço:</label>
+        <input type="number" [(ngModel)]="precoAtualizar" [ngModelOptions]="{standalone: true}">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" [(ngModel)]="categoriaAtualizar" [ngModelOptions]="{standalone: true}">
+          <option value="eletronico">Eletrônico</option>
+          <option value="roupa">Roupa</option>
+          <option value="alimento">Alimento</option>
+        </select>
+        
+      </form>
+      <button (click)="atualizarProduto(); limparCampos()">Atualizar</button>
+    </div>
+    
+    <!-- Deleta os itens baseado no Id informado -->
+  
+    <div class="container-deletar">
+      <h2>Deletar Produto</h2>
+      
+        <input type="search" [(ngModel)]="valorBuscaProdutoDelete"
+        (keyup.enter)="obterProdutoDelete()">
+      
+        <p>
+          Produto deletado: {{ (produtoDeleteEncontrada$ | async)?.nome}}
+        </p>
+        <button (click)="deletarProduto()">Deletar</button>
+    </div>
+    
+    <!-- Faz a listagem de todos os itens no banco de dados -->
+  
+    
+    <div class="container-listagem">
+  
+      <div class="button-wrapper">
+        <button (click)="toggleGaveta()" class="botao-gaveta">
+          Gerar Lista de Produtos ▼
+        </button>
+      </div>
+  
+      <div class="gaveta" [class.aberta]="gavetaAberta">
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+              <th>Categoria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let produto of produtos$ | async">
+              <td>{{ produto.id }}</td>
+              <td>{{ produto.nome }}</td>
+              <td>{{ produto.descricao}} </td>
+              <td class="preco">{{ produto.preco | currency:'BRL' }}</td>
+              <td> {{produto.categoria}} </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <div class="roda-pe">
+  
+    </div>
+  
+  </div>
+  
+  
