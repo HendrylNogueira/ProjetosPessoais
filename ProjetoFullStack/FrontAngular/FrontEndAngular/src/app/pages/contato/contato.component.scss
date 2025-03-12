@@ -1,3 +1,44 @@
 .container{
     margin-top: 100px;
 }
+
+.contato {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .contato h2 {
+    font-size: 24px;
+    color: #3970a7;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .contato p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .redes-sociais a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .redes-sociais a:hover img {
+    transform: scale(1.2);
+  }
