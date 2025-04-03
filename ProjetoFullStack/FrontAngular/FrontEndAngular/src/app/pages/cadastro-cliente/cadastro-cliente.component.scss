@@ -1,3 +1,217 @@
-.container{
-    margin-top: 100px;
+/* Estilização geral */
+.container-cadastro {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Lista de Clientes */
+
+.container-atualizar{
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f8f9fa;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li span {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+li button {
+  margin-left: 10px;
+}
+
+/* Campo de edição de telefone */
+.edit-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.container-listagem{
+  display: flex;
+  flex-direction: column;  /* Organiza os elementos verticalmente */
+  align-items: center;     /* Centraliza os elementos horizontalmente */
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.container-deletar{
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.botao-gaveta{
+  width: 200px;
+  padding: 10px 20px;   /* Ajuste conforme necessário */
+
+}
+
+.button-wrapper {
+  margin-bottom: 20px;    
+}
+
+.gaveta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  padding: 0; /* Remove espaço quando fechada */
+}
+
+.gaveta.aberta {
+  max-height: 600px; /* Ajuste conforme necessário */
+  padding: 10px; /* Adiciona espaço quando aberta */
+}
+
+
+table {
+  width: 100%;
+
+  margin-top: 10px;
+  border-collapse: separate; /* 🚀 Permite o arredondamento */
+  border-spacing: 0; /* 🔹 Remove espaçamento entre células */
+}
+
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+td.preco {
+  color: green;
+  font-weight: bold;
+}
+
+/* 🟢 Adicionando o efeito ao passar o mouse */
+tbody tr {
+background: #f8f9fa;
+transition: 0.3s;
+}
+
+tbody tr:hover {
+background: #e9ecef;
+border-color: #007bff;
+transform: scale(1.00);
+}
+
+/* 🟢 Arredondando as bordas superiores */
+th:first-child {
+border-top-left-radius: 8px;
+}
+
+th:last-child {
+border-top-right-radius: 8px;
+}
+
+.roda-pe{
+height: 50px;
+background-color: #e9ecef;
+}
+
+
+.lista-clientes {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.lista-clientes li {
+  background: #f8f9fa;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.lista-produtos li:hover {
+  background: #e9ecef;
+  border-color: #007bff;
+  transform: scale(1.02);
 }

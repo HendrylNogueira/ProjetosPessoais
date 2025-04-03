@@ -46,28 +46,18 @@
     background-color: #0056b3;
   }
 
-  /* Container principal */
-
-  /* Título */
-
-  
-  /* Campo de busca */
-  .input-busca {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 2px solid #007bff;
-    border-radius: 6px;
-    outline: none;
-    transition: 0.3s;
-  }
-  
-  .input-busca:focus {
-    border-color: #0056b3;
-    box-shadow: 0 0 8px rgba(0, 91, 187, 0.5);
-  }
   
   /* Lista de produtos */
+
+  .container-atualizar{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
   .lista-produtos {
     list-style: none;
     padding: 0;
@@ -105,14 +95,6 @@
     color: #28a745;
   }
 
-  .container-atualizar{
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
 
   .container-deletar{
     max-width: 600px;

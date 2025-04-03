@@ -2,6 +2,13 @@ using Microsoft.EntityFrameworkCore;
 using ECommerceAPI.Application.Produtos.Interfaces;
 using ECommerceAPI.Infrastructure.Produtos.Data;
 using ECommerceAPI.Infrastructure.Produtos.Data.Repositories;
+using ECommerceAPI.Infrastructure.Clientes.Data;
+using ECommerceAPI.Application.Clientes.Interfaces;
+using ECommerceAPI.Infrastructure.Clientes.Data.Repositories;
+using ECommerceAPI.Infrastructure.Vendas.Data.Repositories;
+using ECommerceAPI.Infrastructure.Vendas.Data;
+using ECommerceAPI.Domain.Vendas.Entities;
+using ECommerceAPI.Application.Vendas.Interfaces;
 
 namespace ECommerceAPI
 {
@@ -17,8 +24,13 @@ namespace ECommerceAPI
 
 
             builder.Services.AddScoped<ApplicationDbContext>();
+            builder.Services.AddScoped<ClienteApplicationDbContext>();
+            builder.Services.AddScoped<VendasDbContext>();
 
             builder.Services.AddScoped<IProdutoRepository, ProdutosRepository>();
+            builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+            builder.Services.AddScoped<IVendasRepository, VendaRepository>();
+
 
             // Add services to the container.
 

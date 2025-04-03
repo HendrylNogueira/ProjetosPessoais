@@ -17,10 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Clientes\" />
-    <Folder Include="Domain\Clientes\" />
-    <Folder Include="Infrastructure\Clientes\" />
-    <Folder Include="Web\Clientes\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Migrations\ApplicationDb\" />
   </ItemGroup>
 
 </Project>

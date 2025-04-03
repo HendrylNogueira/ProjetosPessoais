@@ -29,7 +29,50 @@
   }
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #252525;
+  color: white;
+  padding: 15px;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-container nav {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-container nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-container nav a:hover {
+  text-decoration: underline;
+}
+
 main {
   margin-top: 80px; // Para evitar que o conteúdo fique escondido atrás do cabeçalho fixo
   padding: 20px;
 }
+

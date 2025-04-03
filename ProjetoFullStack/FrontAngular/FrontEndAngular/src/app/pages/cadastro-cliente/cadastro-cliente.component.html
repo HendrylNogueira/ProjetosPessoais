@@ -1,7 +1,98 @@
-<div class="container">
-    <h1>Aqui ficará o cadastro de clientes</h1>
-    <p>cadastro-cliente works!</p>
-    
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam ipsa molestias. Sint, nesciunt sed, culpa autem eveniet temporibus soluta quia neque velit cupiditate quaerat modi corrupti deleniti pariatur maxime.</p>
-    
+<div class="container-cadastro">
+    <h2>Cadastro de Clientes</h2>
+  
+    <!-- Formulário de Cadastro -->
+    <form (submit)="CadastrarCliente()">
+        <input type="number" id="id" placeholder="Nome" [(ngModel)]="IdAdicionar" [ngModelOptions]="{standalone: true}">
+
+        <input type="text" id="nome" placeholder="Digite o nome do cliente"  [(ngModel)]="nomeAdicionar" [ngModelOptions]="{standalone: true}">
+        
+        <input type="text" placeholder="Endereço" [(ngModel)]="enderecoAdicionar" [ngModelOptions]="{standalone: true}">
+
+        <input type="text" placeholder="Telefone" [(ngModel)]="telefoneAdicionar" [ngModelOptions]="{standalone: true}">
+        <button type="submit">Adicionar</button>
+    </form>
+  
+</div>
+
+<div class="container-atualizar">
+
+<h2>Atualizar Cadastro do Cliente</h2>
+
+<div>
+    <input type="search" [(ngModel)]="valorBuscaCliente"
+    (keyup.enter)="obterClienteEspecifico()" placeholder="Digite o ID do cliente">
+</div>
+
+<ul class="lista-clientes">
+    <li>
+    <span class="nome-cliente">Id: {{ (clienteEncontrado$ | async)?.id}}</span>
+    <span class="nome-cliente">{{ (clienteEncontrado$ | async)?.nome}}</span>
+    <span class="endereco-cliente">{{ (clienteEncontrado$ | async )?.endereco}}</span>
+    <span class="telefone-cliente"> {{ (clienteEncontrado$ | async )?.telefone}}</span>
+    </li>
+</ul>
+
+<h2>Digite os novos dados do cliente:</h2>
+
+<form>
+    <label for="nome">Telefone correto:</label>
+    <input type="text" id="telefone" placeholder="Digite o telefone do cliente"  [(ngModel)]="telefoneAtualizar" [ngModelOptions]="{standalone: true}">     
+</form>
+<button (click)="atualizarCliente(); limparCampos()">Atualizar</button>
+</div>
+
+<div class="container-deletar">
+<h2>Deletar Produto</h2>
+
+    <input type="search" [(ngModel)]="valorBuscaClienteDelete"
+    (keyup.enter)="obterClienteDelete()">
+
+    <ul class="lista-clientes">
+    <li>
+        <span class="nome-cliente">Id: {{ (clienteDeleteEncontrado$ | async)?.id}}</span>
+        <span class="nome-cliente">{{ (clienteDeleteEncontrado$ | async)?.nome}}</span>
+        <span class="endereco-cliente">{{ (clienteDeleteEncontrado$ | async )?.endereco}}</span>
+        <span class="telefone-cliente"> {{ (clienteDeleteEncontrado$ | async )?.telefone}}</span>
+    </li>
+    </ul>
+    <button (click)="deletarCliente()">Deletar</button>
+</div>
+
+
+<!-- Faz a listagem de todos os itens no banco de dados -->
+
+
+<div class="container-listagem">
+
+<div class="button-wrapper">
+    <button (click)="toggleGaveta()" class="botao-gaveta">
+    Gerar Lista de Clientes ▼
+    </button>
+</div>
+
+<div class="gaveta" [class.aberta]="gavetaAberta">
+    <table>
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Endereço</th>
+        <th>Telefone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of clientes$ | async">
+        <td>{{ cliente.id }}</td>
+        <td>{{ cliente.nome }}</td>
+        <td>{{ cliente.endereco}} </td>
+        <td>{{ cliente.telefone}} </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</div>
+
+<div class="roda-pe">
+
 </div>

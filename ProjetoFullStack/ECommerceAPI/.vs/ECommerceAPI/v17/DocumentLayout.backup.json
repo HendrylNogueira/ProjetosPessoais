@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\projetofullstack\\ecommerceapi\\ecommerceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\projetofullstack\\ecommerceapi\\ecommerceapi\\web\\vendas\\controller\\vendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\web\\vendas\\controller\\vendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\projetofullstack\\ecommerceapi\\ecommerceapi\\domain\\vendas\\entities\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\domain\\vendas\\entities\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\projetofullstack\\ecommerceapi\\ecommerceapi\\domain\\vendas\\entities\\vendaprodutodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\domain\\vendas\\entities\\vendaprodutodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\projetofullstack\\ecommerceapi\\ecommerceapi\\domain\\vendas\\entities\\vendadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\domain\\vendas\\entities\\vendadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\projetofullstack\\ecommerceapi\\ecommerceapi\\domain\\vendas\\entities\\vendaproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\domain\\vendas\\entities\\vendaproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\projetofullstack\\ecommerceapi\\ecommerceapi\\domain\\produtos\\entities\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\domain\\produtos\\entities\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\hendr\\onedrive\\documentos\\projetospessoais\\projetofullstack\\ecommerceapi\\ecommerceapi\\infrastructure\\vendas\\data\\vendasdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3AC5BC-FDD5-4B1B-8BB8-9F11AA06C1BA}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\infrastructure\\vendas\\data\\vendasdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,30 +41,108 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VendaProdutoDto.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProdutoDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProdutoDto.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProdutoDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProdutoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T04:21:54.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VendaProduto.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProduto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProduto.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProduto.cs",
+              "RelativeToolTip": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProduto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T03:49:24.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VendaController.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Web\\Vendas\\Controller\\VendaController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Web\\Vendas\\Controller\\VendaController.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Web\\Vendas\\Controller\\VendaController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Web\\Vendas\\Controller\\VendaController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAlwC8AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T04:22:46.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Vendas\\Entities\\Venda.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Domain\\Vendas\\Entities\\Venda.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Vendas\\Entities\\Venda.cs",
+              "RelativeToolTip": "ECommerceAPI\\Domain\\Vendas\\Entities\\Venda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T03:38:28.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProdutoDto.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Produtos\\Entities\\ProdutoDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Domain\\Produtos\\Entities\\ProdutoDto.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Produtos\\Entities\\ProdutoDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\Domain\\Produtos\\Entities\\ProdutoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T04:22:34.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VendaDto.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Vendas\\Entities\\VendaDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaDto.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Domain\\Vendas\\Entities\\VendaDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T04:20:08.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VendasDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Infrastructure\\Vendas\\Data\\VendasDbContext.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Infrastructure\\Vendas\\Data\\VendasDbContext.cs",
+              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Infrastructure\\Vendas\\Data\\VendasDbContext.cs",
+              "RelativeToolTip": "ECommerceAPI\\Infrastructure\\Vendas\\Data\\VendasDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAApwCEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T04:00:55.252Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Program.cs",
-              "RelativeDocumentMoniker": "ECommerceAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Program.cs",
-              "RelativeToolTip": "ECommerceAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T11:44:38.801Z",
-              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 200,
+          "DockedWidth": 251,
           "SelectedChildIndex": -1,
           "Children": [
             {
