@@ -24,8 +24,7 @@ namespace ECommerceAPI
 
 
             builder.Services.AddScoped<ApplicationDbContext>();
-            builder.Services.AddScoped<ClienteApplicationDbContext>();
-            builder.Services.AddScoped<VendasDbContext>();
+
 
             builder.Services.AddScoped<IProdutoRepository, ProdutosRepository>();
             builder.Services.AddScoped<IClienteRepository, ClienteRepository>();

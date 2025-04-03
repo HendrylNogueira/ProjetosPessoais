@@ -1,7 +1,9 @@
 ﻿using ECommerceAPI.Domain.Vendas.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECommerceAPI.Domain.Produtos.Entities
 {
+    [Table("Produtos")] // 🛠 Força o nome correto da tabela!
     public class Produto
     {
         public int Id { get; set; }

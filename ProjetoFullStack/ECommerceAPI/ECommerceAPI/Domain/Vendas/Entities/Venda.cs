@@ -9,9 +9,9 @@ namespace ECommerceAPI.Domain.Vendas.Entities
         [Key] // 🚀 Define explicitamente que este é o ID primário
         public int Id { get; set; }
         public int ClienteId { get; set; }
-        
-        // public List<VendaProduto> VendaProdutos { get; set; } = new List<VendaProduto>();
-        
+
+        public List<VendaProduto> VendaProdutos { get; set; } = new List<VendaProduto>();
 
     }
 }
+// 

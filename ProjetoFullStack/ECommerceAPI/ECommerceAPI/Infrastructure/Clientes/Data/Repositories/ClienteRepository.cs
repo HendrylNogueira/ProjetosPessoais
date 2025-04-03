@@ -1,15 +1,16 @@
 ﻿using ECommerceAPI.Application.Clientes.Interfaces;
 using ECommerceAPI.Domain.Clientes.Entities;
+using ECommerceAPI.Infrastructure.Produtos.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace ECommerceAPI.Infrastructure.Clientes.Data.Repositories
 {
     public class ClienteRepository : IClienteRepository
     {
-        private readonly ClienteApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
         private readonly ILogger<ClienteRepository> _logger;
 
-        public ClienteRepository(ClienteApplicationDbContext context, ILogger<ClienteRepository> logger)
+        public ClienteRepository(ApplicationDbContext context, ILogger<ClienteRepository> logger)
         {
             _context = context;
             _logger = logger;

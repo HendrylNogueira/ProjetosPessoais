@@ -26,7 +26,7 @@ namespace ECommerceAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Produto",
+                name: "Produtos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
@@ -38,7 +38,7 @@ namespace ECommerceAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Produto", x => x.Id);
+                    table.PrimaryKey("PK_Produtos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -52,12 +52,6 @@ namespace ECommerceAPI.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Vendas", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Vendas_Clientes_ClienteId",
-                        column: x => x.ClienteId,
-                        principalTable: "Clientes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -65,15 +59,18 @@ namespace ECommerceAPI.Migrations
                 columns: table => new
                 {
                     VendaId = table.Column<int>(type: "INTEGER", nullable: false),
-                    ProdutoId = table.Column<int>(type: "INTEGER", nullable: false)
+                    ProdutoId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Id = table.Column<int>(type: "INTEGER", nullable: false),
+                    Quantidade = table.Column<int>(type: "INTEGER", nullable: false),
+                    PrecoUnitario = table.Column<decimal>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_VendaProdutos", x => new { x.VendaId, x.ProdutoId });
                     table.ForeignKey(
-                        name: "FK_VendaProdutos_Produto_ProdutoId",
+                        name: "FK_VendaProdutos_Produtos_ProdutoId",
                         column: x => x.ProdutoId,
-                        principalTable: "Produto",
+                        principalTable: "Produtos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -88,27 +85,22 @@ namespace ECommerceAPI.Migrations
                 name: "IX_VendaProdutos_ProdutoId",
                 table: "VendaProdutos",
                 column: "ProdutoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Vendas_ClienteId",
-                table: "Vendas",
-                column: "ClienteId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Clientes");
+
+            migrationBuilder.DropTable(
                 name: "VendaProdutos");
 
             migrationBuilder.DropTable(
-                name: "Produto");
+                name: "Produtos");
 
             migrationBuilder.DropTable(
                 name: "Vendas");
-
-            migrationBuilder.DropTable(
-                name: "Clientes");
         }
     }
 }

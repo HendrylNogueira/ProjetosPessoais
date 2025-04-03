@@ -2,6 +2,8 @@
 using ECommerceAPI.Infrastructure.Vendas.Data.Repositories;
 using ECommerceAPI.Application.Vendas.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ECommerceAPI.Infrastructure.Produtos.Data;
 
 namespace ECommerceAPI.Web.Vendas.Controller
 {
@@ -10,9 +12,12 @@ namespace ECommerceAPI.Web.Vendas.Controller
     public class VendaController : ControllerBase
     {
         private readonly IVendasRepository _vendasRepository;
-        public VendaController(IVendasRepository vendasRepository)
+        private readonly ApplicationDbContext _context;
+
+        public VendaController(IVendasRepository vendasRepository, ApplicationDbContext context)
         {
             _vendasRepository = vendasRepository;
+            _context = context;
         }
 
         [HttpGet]
@@ -37,12 +42,23 @@ namespace ECommerceAPI.Web.Vendas.Controller
 
             var venda = new Venda
             {
-                Id = vendaDto.IdVenda, // Mantendo o ID
-                ClienteId = vendaDto.IdClienteDto.IdCliente, // ✅ Pegando apenas o ID do cliente
+                ClienteId = vendaDto.IdClienteDto.IdCliente,
+                VendaProdutos = vendaDto.VendaProdutos.Select(vp => new VendaProduto
+                {
+                    ProdutoId = vp.ProdutoId,
+                    Quantidade = vp.Quantidade,
+                    PrecoUnitario = vp.PrecoUnitario
+                }).ToList()
+
             };
 
 
             await _vendasRepository.AddVendaAsync(venda);
+            // Buscar novamente a venda para incluir os produtos na resposta
+            var vendaCompleta = await _context.Vendas
+                .Include(v => v.VendaProdutos)
+                .ThenInclude(vp => vp.Produto) // Carregar os detalhes dos produtos
+                .FirstOrDefaultAsync(v => v.Id == venda.Id);
             return CreatedAtAction(nameof(ObterVendaPorId), new { id = venda.Id }, venda);
         }
 
