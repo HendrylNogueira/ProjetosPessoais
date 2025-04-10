@@ -4,6 +4,7 @@ import { CadastroProdutosComponent } from './pages/cadastro-produtos/cadastro-pr
 import { CadastroClienteComponent } from './pages/cadastro-cliente/cadastro-cliente.component';
 import { HomeComponent } from '../app/pages/home/home.component'
 import { ContatoComponent } from './pages/contato/contato.component';
+import { VendaComponent } from './venda/venda.component';
 
 
 export const routes: Routes = [
@@ -11,6 +12,7 @@ export const routes: Routes = [
   { path: 'cadastro-clientes', component: CadastroClienteComponent },
   { path: 'home', component: HomeComponent },
   {path: 'contato', component: ContatoComponent},
+  {path: 'venda', component: VendaComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Rota padrão
 ];
 

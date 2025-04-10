@@ -50,8 +50,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -60,7 +68,7 @@
               "RelativeDocumentMoniker": "ECommerceAPI\\Web\\Vendas\\Controller\\VendaController.cs",
               "ToolTip": "C:\\Users\\hendr\\OneDrive\\Documentos\\ProjetosPessoais\\ProjetoFullStack\\ECommerceAPI\\ECommerceAPI\\Web\\Vendas\\Controller\\VendaController.cs",
               "RelativeToolTip": "ECommerceAPI\\Web\\Vendas\\Controller\\VendaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwC0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T04:22:46.356Z",
               "EditorCaption": ""
@@ -75,8 +83,7 @@
               "RelativeToolTip": "ECommerceAPI\\Infrastructure\\Vendas\\Data\\Repositories\\VendaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T05:24:00.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T05:24:00.658Z"
             },
             {
               "$type": "Document",
@@ -88,8 +95,7 @@
               "RelativeToolTip": "ECommerceAPI\\Infrastructure\\Produtos\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwBwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T05:19:23.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T05:19:23.159Z"
             },
             {
               "$type": "Document",
@@ -101,8 +107,7 @@
               "RelativeToolTip": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProduto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T03:49:24.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T03:49:24.861Z"
             },
             {
               "$type": "Document",
@@ -114,8 +119,7 @@
               "RelativeToolTip": "ECommerceAPI\\Program.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAApwBwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T05:24:14.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T05:24:14.733Z"
             },
             {
               "$type": "Document",
@@ -127,8 +131,7 @@
               "RelativeToolTip": "ECommerceAPI\\Infrastructure\\Clientes\\Data\\Repositories\\ClienteRepository.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAkwA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T05:23:35.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T05:23:35.884Z"
             },
             {
               "$type": "Document",
@@ -140,8 +143,7 @@
               "RelativeToolTip": "ECommerceAPI\\Domain\\Produtos\\Entities\\Produto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T05:13:35.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T05:13:35.914Z"
             },
             {
               "$type": "Document",
@@ -153,8 +155,7 @@
               "RelativeToolTip": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaProdutoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:21:54.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T04:21:54.269Z"
             },
             {
               "$type": "Document",
@@ -166,8 +167,7 @@
               "RelativeToolTip": "ECommerceAPI\\Domain\\Vendas\\Entities\\VendaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:20:08.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T04:20:08.019Z"
             },
             {
               "$type": "Document",
@@ -179,16 +179,7 @@
               "RelativeToolTip": "ECommerceAPI\\Domain\\Produtos\\Entities\\ProdutoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:22:34.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2025-04-03T04:22:34.088Z"
             }
           ]
         },

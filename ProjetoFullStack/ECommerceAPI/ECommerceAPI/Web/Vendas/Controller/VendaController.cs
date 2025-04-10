@@ -43,7 +43,8 @@ namespace ECommerceAPI.Web.Vendas.Controller
             var venda = new Venda
             {
                 ClienteId = vendaDto.IdClienteDto.IdCliente,
-                VendaProdutos = vendaDto.VendaProdutos.Select(vp => new VendaProduto
+                VendaProdutos = vendaDto.VendaProdutos
+                .Select(vp => new VendaProduto
                 {
                     ProdutoId = vp.ProdutoId,
                     Quantidade = vp.Quantidade,
