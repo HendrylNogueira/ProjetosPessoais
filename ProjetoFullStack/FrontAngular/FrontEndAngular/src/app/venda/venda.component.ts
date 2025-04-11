@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Venda } from '../models/venda';
 import { Observable, of } from 'rxjs';
+import { Cliente } from '../models/cliente';
 
 
 
@@ -20,24 +21,30 @@ export class VendaComponent {
   vendas$?: Observable<Venda[]>;
   
 
-  idCliente = 0;
-  produtoId = 0;
-  quantidade = 0;
+  idClienteAdicionar = 0;
+  idProdutoAdicionar = 0;
+  quantidadeAdicionar = 0;
 
   RegistrarVenda(){
       const RegistVenda = {
         
           idVenda: 0,
           idClienteDto: {
-            idCliente: this.idCliente
+            idCliente: this.idClienteAdicionar
           },
           vendaProdutos: [
             {
               vendaId: 0,
-              produtoId: this.produtoId,
-              quantidade: this.quantidade,
+              produtoId: this.idProdutoAdicionar,
+              quantidade: this.quantidadeAdicionar,
               precoUnitario: 0,
-              produto: null
+              produto: {
+                id: 0,
+                nome: " ",
+                descricao: " ",
+                preco: 0,
+                categoria: " "
+              }
             }
           ]
         }
@@ -51,9 +58,18 @@ export class VendaComponent {
         }
 
       limparCampos(){
-        this.idCliente = 0;
-        this.produtoId = 0;  
-        this.quantidade = 0;    
+        this.idClienteAdicionar = 0;
+        this.idProdutoAdicionar = 0;  
+        this.quantidadeAdicionar = 0;    
       }
 
+      nomeCliente: string = '';
+
+      buscarClientePorId() {
+        this.http.get<Cliente>(`${this.urlApi}/api/Cliente/${this.idClienteAdicionar}`)
+        .subscribe(cliente => {this.nomeCliente = cliente.nome;
+        }, err => {
+          this.nomeCliente = 'Cliente não encontrado';
+        });
+      }
 }
