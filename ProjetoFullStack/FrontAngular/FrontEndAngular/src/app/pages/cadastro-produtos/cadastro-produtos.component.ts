@@ -11,8 +11,6 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   imports: [CommonModule, FormsModule, RouterModule],
-
-
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './cadastro-produtos.component.html',
