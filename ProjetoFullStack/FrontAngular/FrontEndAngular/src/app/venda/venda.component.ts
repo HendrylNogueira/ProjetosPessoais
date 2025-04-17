@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { Venda } from '../models/venda';
 import { Observable, of } from 'rxjs';
 import { Cliente } from '../models/cliente';
+import { Produto } from '../models/produto';
 
 
 
@@ -21,7 +22,10 @@ export class VendaComponent {
   vendas$?: Observable<Venda[]>;
   
 
-  idClienteAdicionar = 0;
+  valorBuscaProduto = '';
+  produtoEncontrada$?: Observable<Produto>;
+
+  idClienteAdicionar = 1;
   idProdutoAdicionar = 0;
   quantidadeAdicionar = 0;
 
@@ -58,18 +62,30 @@ export class VendaComponent {
         }
 
       limparCampos(){
-        this.idClienteAdicionar = 0;
+        this.idClienteAdicionar = 1;
         this.idProdutoAdicionar = 0;  
         this.quantidadeAdicionar = 0;    
       }
 
       nomeCliente: string = '';
+      enderecoCliente: string = '';
+      telefoneCliente: string = '(__) _____-____';
 
       buscarClientePorId() {
         this.http.get<Cliente>(`${this.urlApi}/api/Cliente/${this.idClienteAdicionar}`)
-        .subscribe(cliente => {this.nomeCliente = cliente.nome;
+        .subscribe(cliente => {this.nomeCliente = cliente.nome, this.enderecoCliente = cliente.endereco, this.telefoneCliente = cliente.telefone;
         }, err => {
           this.nomeCliente = 'Cliente não encontrado';
+          this.enderecoCliente = '';
+          this.telefoneCliente = '(__) _____-____'
         });
       }
+
+      obterProdutoEspecifico(){
+          if(!this.valorBuscaProduto)
+            return;
+      
+          this.produtoEncontrada$ = this.http
+          .get<Produto>(`${this.urlApi}/api/Produto/${this.valorBuscaProduto}`)
+        }
 }

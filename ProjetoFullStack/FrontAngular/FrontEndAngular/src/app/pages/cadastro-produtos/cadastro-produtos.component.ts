@@ -7,6 +7,8 @@ import { Observable, of } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { ProdutoAtualizar } from '../../models/produtoAtualizar';
 import { RouterModule } from '@angular/router';
+import { ProdutoService } from '../../services/produto.service';
+
 
 
 @Component({
@@ -19,6 +21,10 @@ import { RouterModule } from '@angular/router';
 
 
 export class CadastroProdutosComponent implements OnInit{
+
+  constructor(private produtoService: ProdutoService) {}
+
+
   title = 'FrontEndAngular';
   http = inject(HttpClient);
   urlApi = 'https://localhost:7240';
@@ -47,6 +53,7 @@ export class CadastroProdutosComponent implements OnInit{
     this.produtoEncontrada$ = this.http
     .get<Produto>(`${this.urlApi}/api/Produto/${this.valorBuscaProduto}`)
   }
+
   obterProdutoDelete(){
     if(!this.valorBuscaProdutoDelete)
       return;
