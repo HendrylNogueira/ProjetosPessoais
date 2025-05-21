@@ -1,7 +1,7 @@
 <body>
   <header>
       <div class="container header-content">
-          <div class="logo">PDV System</div>
+          <div class="logo">HN System PDV</div>
           <div class="user-info">
               <span>Vendedor</span>
               <div class="user-avatar">V</div>
@@ -16,11 +16,25 @@
                   <div class="card-header">Nova Venda</div>
                   <div class="form-group">
                       <label for="idCliente">ID do Cliente</label>
-                      <input type="number" id="idCliente" placeholder="Digite o ID do cliente" [(ngModel)]="idClienteAdicionar" [ngModelOptions]="{standalone: true}" (blur)="buscarClientePorId()">
+                      <input type="number" id="idCliente" placeholder="Digite o ID do cliente" [(ngModel)]="idClienteAdicionar" [ngModelOptions]="{standalone: true}" (blur)="buscarClientePorId()" disabled>
                   </div>
                   <div class="form-group">
-                      <label for="produtoId">ID do Produto</label>
-                      <input type="number" id="produtoId" placeholder="Digite o ID do produto" [(ngModel)]="idProdutoAdicionar" [ngModelOptions]="{standalone: true}">
+
+                    <label for="categoria">Selecione a categoria do produto:</label>
+                    <select id="categoria" [(ngModel)]="categoriaAdicionar" (change)="onCategoriaChange()"[ngModelOptions]="{standalone: true}">
+                        <option value="">Selecione</option>
+                        <option value="eletronico">Eletrônico</option>
+                        <option value="roupa">Roupa</option>
+                        <option value="alimento">Alimento</option>
+                        </select>
+
+                    <label for="produtoId">Selecione o Produto:</label>
+
+                    <select [(ngModel)]="idProdutoAdicionar">
+                        <option value="0">Selecione</option>
+                        <option *ngFor="let produto of produtoPorCategoria$ | async" [value]="produto.id">{{ produto.nome }}</option>
+                    </select>
+
                   </div>
                   <div class="form-group">
                       <label for="quantidade">Quantidade</label>
@@ -29,32 +43,32 @@
                   <button class="btn btn-primary btn-block" type="submit" (click)="RegistrarVenda()">Registrar Venda</button>
               </div>
 
-              <div class="card">
+              <div class="cardDesativado">
                   <div class="card-header">Produtos Populares</div>
                   <div class="search-bar">
                       <input type="search" placeholder="Buscar produto..." disabled>
                       <button class="btn btn-primary">Buscar</button>
                   </div>
                   <div class="products-grid">
-                      <div class="product-card">
+                      <div class="product-cardDesativado">
                           <div class="product-img">Prod 1</div>
                           <div class="product-name">Camiseta</div>
                           <div class="product-price">R$ 39,90</div>
                           <div class="product-id">ID: 1001</div>
                       </div>
-                      <div class="product-card">
+                      <div class="product-cardDesativado">
                           <div class="product-img">Prod 2</div>
                           <div class="product-name">Calça Jeans</div>
                           <div class="product-price">R$ 89,90</div>
                           <div class="product-id">ID: 1002</div>
                       </div>
-                      <div class="product-card">
+                      <div class="product-cardDesativado">
                           <div class="product-img">Prod 3</div>
                           <div class="product-name">Tênis</div>
                           <div class="product-price">R$ 129,90</div>
                           <div class="product-id">ID: 1003</div>
                       </div>
-                      <div class="product-card">
+                      <div class="product-cardDesativado">
                           <div class="product-img">Prod 4</div>
                           <div class="product-name">Boné</div>
                           <div class="product-price">R$ 29,90</div>
@@ -65,7 +79,7 @@
           </div>
 
           <div class="right-column">
-              <div class="card">
+              <div class="cardDesativado">
                   <div class="card-header">Carrinho</div>
                   <div class="cart-items">
                       <div class="cart-item">

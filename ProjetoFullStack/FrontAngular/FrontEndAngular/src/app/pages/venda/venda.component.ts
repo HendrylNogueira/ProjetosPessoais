@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Venda } from '../models/venda';
-import { Observable, of } from 'rxjs';
-import { Cliente } from '../models/cliente';
-import { Produto } from '../models/produto';
+import { Venda } from '../../models/venda';
+import { Observable, BehaviorSubject  } from 'rxjs';
+import { Cliente } from '../../models/cliente';
+import { Produto } from '../../models/produto';
+import { switchMap, map } from 'rxjs/operators';
 
 
 
@@ -27,7 +28,39 @@ export class VendaComponent {
 
   idClienteAdicionar = 1;
   idProdutoAdicionar = 0;
-  quantidadeAdicionar = 0;
+
+  quantidadeAdicionar = 1.0;
+
+  produtos$!: Observable<Produto[]>;
+  produtoSelecionado = '';
+
+  produtoPorCategoria$?: Observable<Produto[]>;
+  categoriaAdicionar = '';
+
+  private categoriaSelecionada$ = new BehaviorSubject<string>(this.categoriaAdicionar);
+
+
+  ngOnInit(): void{
+    this.buscarProdutos();
+    this.produtoPorCategoria$ = this.categoriaSelecionada$.pipe(
+      switchMap(categoria =>
+        this.http.get<Produto[]>(`${this.urlApi}/api/produto`).pipe(
+      map(produtos => produtos.filter(p => p.categoria === categoria ))
+        )
+      )
+    );
+  }
+  
+  onCategoriaChange(): void {
+    this.categoriaSelecionada$.next(this.categoriaAdicionar);
+    this.idProdutoAdicionar = 0; // reseta seleção
+  }
+
+
+  
+  buscarProdutos(){
+    this.produtos$ = this.http.get<Produto[]>(`${this.urlApi}/api/produto`)
+  }
 
   RegistrarVenda(){
       const RegistVenda = {
@@ -64,7 +97,7 @@ export class VendaComponent {
       limparCampos(){
         this.idClienteAdicionar = 1;
         this.idProdutoAdicionar = 0;  
-        this.quantidadeAdicionar = 0;    
+        this.quantidadeAdicionar = 1.0;    
       }
 
       nomeCliente: string = '';

@@ -7,7 +7,6 @@ import { Observable, of } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { ProdutoAtualizar } from '../../models/produtoAtualizar';
 import { RouterModule } from '@angular/router';
-import { ProdutoService } from '../../services/produto.service';
 
 
 
@@ -21,9 +20,6 @@ import { ProdutoService } from '../../services/produto.service';
 
 
 export class CadastroProdutosComponent implements OnInit{
-
-  constructor(private produtoService: ProdutoService) {}
-
 
   title = 'FrontEndAngular';
   http = inject(HttpClient);

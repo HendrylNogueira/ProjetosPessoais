@@ -17,7 +17,7 @@ namespace ECommerceAPI.Domain.Vendas.Entities
         public int ProdutoId { get; set; }
         public Produto Produto { get; set; }
 
-        public int Quantidade { get; set; }
+        public decimal Quantidade { get; set; }
         public decimal PrecoUnitario { get; set; }
     }
 }

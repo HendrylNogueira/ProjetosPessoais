@@ -129,4 +129,3 @@ C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoFullStack\ECommerceAP
 C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoFullStack\ECommerceAPI\ECommerceAPI\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoFullStack\ECommerceAPI\ECommerceAPI\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoFullStack\ECommerceAPI\ECommerceAPI\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\hendr\OneDrive\Documentos\ProjetosPessoais\ProjetoFullStack\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

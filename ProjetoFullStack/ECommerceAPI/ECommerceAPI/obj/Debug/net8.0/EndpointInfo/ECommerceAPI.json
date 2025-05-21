@@ -610,8 +610,8 @@
             "$ref": "#/components/schemas/Produto"
           },
           "quantidade": {
-            "type": "integer",
-            "format": "int32"
+            "type": "number",
+            "format": "double"
           },
           "precoUnitario": {
             "type": "number",
@@ -632,8 +632,8 @@
             "format": "int32"
           },
           "quantidade": {
-            "type": "integer",
-            "format": "int32"
+            "type": "number",
+            "format": "double"
           },
           "precoUnitario": {
             "type": "number",
