@@ -1,0 +1,16 @@
+Criar um projeto React:
+
+Liberar o prompt para aceitar comandos npmm e npx
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
+Rodar o comando:
+
+npx create-expo-app --template
+
+Preenche os dados que o terminal solicita e pronto
+
+
+Comando segundo a documentação do React para criar um novo projeto:
+
+npx create-expo-app@latest
